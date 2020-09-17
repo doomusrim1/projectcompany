@@ -1,1 +1,9 @@
-<app-user></app-user>
+<div class="container">
+    <div class="form-group">
+        <label >username</label>
+        <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username">
+        <label >password</label>
+        <input type="text" class="form-control" id="password" name="password" [(ngModel)]="password">
+        <button class="btn btn-dark mt-3" (click)="onclickPage()">login</button>
+      </div>
+</div>

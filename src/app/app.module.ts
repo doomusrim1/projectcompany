@@ -8,6 +8,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { AdminComponent } from './modals/navbar/admin/admin.component';
 import { UserComponent } from './modals/navbar/user/user.component';
 import { MoneyComponent } from './pages/user/money/money.component';
+import { ItemComponent } from './pages/user/productitem/item/item.component';
+import { RebealComponent } from './pages/user/productitem/rebeal/rebeal.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -17,11 +20,14 @@ import { MoneyComponent } from './pages/user/money/money.component';
     AdminComponent,
     UserComponent,
     MoneyComponent,
+    ItemComponent,
+    RebealComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
