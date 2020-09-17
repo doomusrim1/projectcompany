@@ -1,8 +1,6 @@
-<div
-  class="w3-sidebar w3-bar-block w3-card w3-animate-left"
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left"
   style="display: none"
-  id="leftMenu"
->
+  id="leftMenu">
   <a
     href="javascript:void(0)"
     (click)="onClickCloseMenu()"
@@ -10,35 +8,20 @@
     style="height: 65px"
   >
     <span style="float: right">&times;</span></a>
-
-    
-      <br> 
-      <a [routerLink]="['/monney']">จัดการเบิกเงิน</a>
-      <br>
-      <hr />
-      <br> 
-      <a [routerLink]="['/item-give']">จัดการเบิก/คืนของ</a>
-      <br>
-      <hr />
-      <br> 
-      <a [routerLink]="['/home']">จัดการยืม/คืนรถ</a>
-      <br>
+      
+      <a class="w3-bar-item color-white" [routerLink]="['/monney']" >จัดการเบิกเงิน</a>
       <hr /> 
-      <br> 
-      <a [routerLink]="['/home']">จัดการบุคคล</a>
-      <br>
+      <a class="w3-bar-item color-white" [routerLink]="['/item-give']">จัดการเบิก/คืนของ</a>
       <hr />
-      <br> 
-      <a [routerLink]="['/home']">คลังอุปกรณ์สำนักงาน</a>
-      <br>
+      <a class="w3-bar-item color-white" [routerLink]="['/home']">จัดการยืม/คืนรถ</a>
+      <hr /> 
+      <a class="w3-bar-item color-white" [routerLink]="['/home']">จัดการบุคคล</a>
       <hr />
-      <br> 
-      <a [routerLink]="['/home']">จัดการฝ่ายขาย</a>
-      <br>
+      <a class="w3-bar-item color-white" [routerLink]="['/home']">คลังอุปกรณ์สำนักงาน</a>
       <hr />
-      <br> 
-      <a [routerLink]="['/home']">ออกจากระบบ </a>
-      <br>
+      <a class="w3-bar-item color-white" [routerLink]="['/home']">จัดการฝ่ายขาย</a>
+      <hr />
+      <a class="w3-bar-item color-white" [routerLink]="['/home']">ออกจากระบบ </a>
       <hr />
 
 </div>
