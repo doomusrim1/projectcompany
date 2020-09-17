@@ -1,5 +1,4 @@
-import { Route } from '@angular/compiler/src/core';
-import { Component, OnInit } from '@angular/core';
+import { Component,  OnInit,  } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -18,10 +17,13 @@ export class HomeComponent implements OnInit {
     
    }
    onclickPage(){
-    if(this.username == 'user' && this.password == 1234){
-            this.router.navigate(['/user/money']);
+    if(this.username == 'user' && this.password == 1234){  
+      alert('สำเร็จ');
+            this.router.navigate(['/user/money']);   
+
     }
     if(this.username == 'admin' && this.password == 1234){
+      alert('สำเร็จ');
       this.router.navigate(['/admin/admin-money']);
 }
   }
