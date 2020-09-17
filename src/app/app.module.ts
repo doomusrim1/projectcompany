@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './pages/home/home.component';
 import { AdminComponent } from './modals/navbar/admin/admin.component';
 import { UserComponent } from './modals/navbar/user/user.component';
+import { MoneyComponent } from './pages/user/money/money.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { UserComponent } from './modals/navbar/user/user.component';
     HomeComponent,
     AdminComponent,
     UserComponent,
+    MoneyComponent,
   ],
   imports: [
     BrowserModule,
