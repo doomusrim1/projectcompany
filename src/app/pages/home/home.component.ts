@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
             this.router.navigate(['/user/money']);
     }
     if(this.username == 'admin' && this.password == 1234){
-      this.router.navigate(['/admin/admin/admin-money']);
+      this.router.navigate(['/admin/admin-money']);
 }
   }
   ngOnInit(): void {
