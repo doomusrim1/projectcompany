@@ -2,3 +2,110 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+nav {
+    background-color: #DD752F;
+    width: 100%;
+    max-width: 100%;
+  }
+  .color-orange {
+      background-color: #DD752F;
+  }
+  .button-item {
+    background-color: #DD752F;
+    border: 0;
+    box-shadow: 0px 1px 3px rgba(black,0.16);  
+    width: 90px;
+    height: 47px;
+  
+  }
+  .button-itemManu{
+      background-color: #DD752F;
+      border: 0;
+      width: 50px;
+      height: 50px;
+  }
+  a,table,button{
+      font-size: 16px;
+  }
+  p {
+    padding-top: 50px;
+  }
+  
+  h2 {
+    padding-top: 100px;
+  }
+  .pt-100 {
+    padding-top: 100px;
+  }
+  .pt-50 {
+    padding-top: 50px;
+  }
+  table {
+    box-shadow: 0px 1px 1px black;
+  }
+  .btn-darka{
+    background-color:rgba(#060606,0.59);
+    color:white;
+    box-shadow: 0px 3px 6px rgba(#000000,0.16);
+  }
+  .btn-scale {
+    background-color: rgba(#FB0404, 0.73);
+    color: white;
+    box-shadow: 0px 3px 6px rgba(#000000,0.16);
+  }
+  .button-from{
+    background-color:rgba(#060606,0.59);
+    color:white;
+    box-shadow: 0px 1px 3px rgba(black,0.16);
+  }
+  .color-white {
+    color: white;
+  }
+  
+  .size-imgmenu {
+    width: 50px;
+    height: 50px;
+    color: white;
+  }
+  
+  .link {
+    color: black;
+    box-shadow: 0px 0px 1px black;
+    margin-top:3px;
+  }
+  .mt-1{
+    margin-left: 1rem;
+  }
+  .dark{
+    background-color:rgba(#060606,0.59);
+    border: 0;
+    box-shadow: 0px 1px 3px rgba(black,0.16);  
+    width: 90px;
+    height: 47px;
+  }
+  
+  span{
+    color:black;
+  }
+  a:hover {
+  
+    background-color: white;
+  }
+  
+  button:hover {
+    background-color: #DD752F;
+  }
+  
+  .content-text:visited{
+    color:#DD752F;
+    background-color:#BFBFBF;
+  }
+
+  p{
+      color:white;
+  }
+  body {
+    background-color: #CCCCCC;
+    
+  }
+ 

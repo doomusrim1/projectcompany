@@ -1,0 +1,40 @@
+
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+    <a href="javascript:void(0)" (click)="onClickCloseMenu()" class="w3-bar-item color-orange w3-large" style="height:  65px; "> <span
+        style="float: right;">&times;</span></a>
+    
+    <a  [routerLink]="['/']" class="w3-bar-item  link " >เบิกเงิน</a>
+    <a  [routerLink]="['/productitem/rebeal']" class="w3-bar-item link " >เบิกของ/คือของ</a>
+    <a  [routerLink]="['/productcar/tre']" class="w3-bar-item link " >ยืมรถ/คืนรถ</a>
+    <div id="accordion" class="dropright ">
+    <div class="link">
+    <a   class="w3-bar-item " data-toggle="collapse" href="#collapseOne">
+      <span style="color:black;">ฝ่ายขาย</span><span class="dropdown-toggle" style="float: right;">
+      </span></a>
+      <div id="collapseOne" class="collapse " data-parent="#accordion">
+        <div class="card-body">
+          <a  data-toggle="collapse" href="#collapses">  
+             <div  style="padding-bottom: 10px;color:black;border-bottom: 1px solid black;">บันทึกรายการ<span class="dropdown-toggle" style="float: right;">
+            </span></div>
+            <div style="padding-top:10px;" id="collapses" class="collapse " data-parent="#collapseOne"> <a [routerLink]="['/sale/money']">-บันทึกเบิกเงิน</a></div>
+            <div id="collapses" class="collapse " data-parent="#collapseOne"> <a [routerLink]="['/sale/item']">-บันทึกเบิกของ/คืนของ</a></div>
+            <div id="collapses" class="collapse " data-parent="#collapseOne"> <a [routerLink]="['/sale/car']">-บันทึกยืมรถ/คืนรถ</a></div>
+              </a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <a  [routerLink]="['/profile/profile']" class="w3-bar-item  link">โปรไฟล์</a>
+    <a  [routerLink]="['/view/cash']" class="w3-bar-item  link">ประวัติทำรายการ</a>
+    <a   class="w3-bar-item  link">ออกจากระบบ</a>
+
+  </div>
+
+
+  <nav class="navbar navbar-dark ">
+    <button type="button" id="sidebarCollapse" class="btn btn-info button-itemManu" (click)="onClickOpenMenu()">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <span><img src="/assets/img/head.png"></span>
+  </nav>
