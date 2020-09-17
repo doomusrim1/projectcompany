@@ -11,6 +11,7 @@ import { MoneyComponent } from './pages/user/money/money.component';
 import { ItemComponent } from './pages/user/productitem/item/item.component';
 import { RebealComponent } from './pages/user/productitem/rebeal/rebeal.component';
 import {FormsModule} from '@angular/forms';
+import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import {FormsModule} from '@angular/forms';
     MoneyComponent,
     ItemComponent,
     RebealComponent,
+    AdminMonneyComponent,
   ],
   imports: [
     BrowserModule,
