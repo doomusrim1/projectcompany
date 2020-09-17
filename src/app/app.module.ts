@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AdminComponent } from './modals/navbar/admin/admin.component';
 import { UserComponent } from './modals/navbar/user/user.component';
 import { MoneyComponent } from './pages/user/money/money.component';
+import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MoneyComponent } from './pages/user/money/money.component';
     AdminComponent,
     UserComponent,
     MoneyComponent,
+    AdminMonneyComponent,
   ],
   imports: [
     BrowserModule,
