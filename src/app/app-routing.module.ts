@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AdminMonneyAllComponent } from './pages/admin/admin-monney-all/admin-monney-all.component';
 import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MoneyComponent } from './pages/user/money/money.component';
@@ -10,8 +11,8 @@ const routes: Routes = [
   {path: 'user/money',component: MoneyComponent},
   {path: 'productitem/item',component:ItemComponent},
 
-  {path: 'admin/admin-money',component: AdminMonneyComponent},
-
+  {path: 'admin-money',component: AdminMonneyComponent},
+  {path: 'admin-money-all',component: AdminMonneyAllComponent},
 ];
 
 @NgModule({

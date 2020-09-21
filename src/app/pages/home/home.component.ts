@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
     }
     if(this.username == 'admin' && this.password == 1234){
       alert('สำเร็จ');
-      this.router.navigate(['/admin/admin-money']);
+      this.router.navigate(['/admin-money']);
 }
   }
   ngOnInit(): void {

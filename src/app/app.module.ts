@@ -14,6 +14,7 @@ import {FormsModule} from '@angular/forms';
 import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.component';
 import { ModalItemComponent } from './modals/navbar/user/modal/modal-item/modal-item.component';
 import { ModalBillComponent } from './modals/navbar/user/modal/modal-bill/modal-bill.component';
+import { AdminMonneyAllComponent } from './pages/admin/admin-monney-all/admin-monney-all.component';
 
 
 
@@ -29,6 +30,7 @@ import { ModalBillComponent } from './modals/navbar/user/modal/modal-bill/modal-
     AdminMonneyComponent,
     ModalItemComponent,
     ModalBillComponent,
+    AdminMonneyAllComponent,
 
   ],
   imports: [

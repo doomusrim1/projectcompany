@@ -2,10 +2,17 @@
 
     <br>
     <div class="buttonber">
-    <a [routerLink]="['/monneyall']"> <button class="buttonmonney-click" style="float: left"> เบิกเงิน </button> </a>
-    <a [routerLink]="['/monneyall']"> <button class="buttonmonney" style="float: left"> เบิกเงิน </button> </a>
+    <a [routerLink]="['/admin-money']"> <button class="buttonmonney-click" style="float: left"> เบิกเงิน </button> </a>
+    <div class="dropdown">
+      <button class="buttonmonney" style="float: left">รายการทั้งหมด</button>
+      <div class="dropdown-content">
+        <a [routerLink]="['/admin-money-all']">เบิกเงินทั้งหมด</a>
+        <a [routerLink]="['/admin-money-report']">รายการเบิกเงินย้อนหลัง</a>
+      </div>
     </div>
-        <br> <br> <br> <br>    
+
+    </div>
+        <br> <br>    
     <h2 class="topic">รายการเบิกเงินพนักงาน</h2>
          <br> <br>
 
