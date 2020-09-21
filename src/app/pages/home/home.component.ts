@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
     
    }
    onclickPage(){
+     if(this.username  && this.password   ){
     if(this.username == 'user' && this.password == 1234){  
       alert('สำเร็จ');
             this.router.navigate(['/user/money']);   
@@ -26,7 +27,10 @@ export class HomeComponent implements OnInit {
       alert('สำเร็จ');
       this.router.navigate(['/admin/admin-money']);
 }
+  }else{
+    alert('ไม่สำเร็จ');
   }
+}
   ngOnInit(): void {
   }
 

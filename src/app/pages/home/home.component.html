@@ -1,9 +1,12 @@
-<div class="container">
-    <div class="form-group">
-        <label >username</label>
-        <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username">
-        <label >password</label>
+<div class="img" >
+  <div class="container center" style="max-width: 100%;" >
+    <div class="form-group" style="background-color: rgba(0,0,0,0.6);">  
+      <div style="background-color: rgba(0,0,0,0.6);padding:30px;font-size: 30px;" >เข้าสู่ระบบ</div>
+        <label class="mt-4">ชื่อผู้ใช้งาน</label>
+        <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username" >
+        <label class="mt-4">รหัสผ่าน</label>
         <input type="text" class="form-control" id="password" name="password" [(ngModel)]="password">
-        <button class="btn btn-dark mt-3" (click)="onclickPage()">login</button>
+        <button class="btn btn-dark mt-5 mb-3" (click)="onclickPage()">เข้าสู่ระบบ</button>
       </div>
+    </div>
 </div>

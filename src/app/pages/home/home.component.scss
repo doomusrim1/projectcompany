@@ -1,0 +1,20 @@
+
+.img{
+    background-image: url('/assets/img/demo.png');
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    max-width: 100%;
+    color:white;
+}
+.center{
+    text-align: center;
+    position: absolute;
+    top: 25%; 
+    width: 500px;
+    left: 0;
+    right: 0;
+}
+input:hover{
+    background-color: rgba(0,0,0,0.6);
+}
