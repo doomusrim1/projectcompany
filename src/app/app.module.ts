@@ -14,8 +14,12 @@ import {FormsModule} from '@angular/forms';
 import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.component';
 import { ModalItemComponent } from './modals/navbar/user/modal/modal-item/modal-item.component';
 import { ModalBillComponent } from './modals/navbar/user/modal/modal-bill/modal-bill.component';
+<<<<<<< HEAD
 import { ReitemComponent } from './pages/user/productitem/reitem/reitem.component';
 import { UserProfileComponent } from './pages/user/profile/user-profile/user-profile.component';
+=======
+import { AdminMonneyAllComponent } from './pages/admin/admin-monney-all/admin-monney-all.component';
+>>>>>>> amorntep
 
 
 
@@ -31,8 +35,12 @@ import { UserProfileComponent } from './pages/user/profile/user-profile/user-pro
     AdminMonneyComponent,
     ModalItemComponent,
     ModalBillComponent,
+<<<<<<< HEAD
     ReitemComponent,
     UserProfileComponent,
+=======
+    AdminMonneyAllComponent,
+>>>>>>> amorntep
 
   ],
   imports: [
