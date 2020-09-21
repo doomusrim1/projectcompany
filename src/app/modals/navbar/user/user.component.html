@@ -1,12 +1,12 @@
 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
     <a href="javascript:void(0)" (click)="onClickCloseMenu()" class="w3-bar-item color-orange w3-large"
-      style="height:  65px; "> <span style="float: right;">&times;</span></a>
+      style="height:  60px; "> <span style="float: right;">&times;</span></a>
   
     <a [routerLink]="['/user/money']"       class="w3-bar-item  link ">เบิกเงิน</a>
-    <a [routerLink]="['/productitem/item']" class="w3-bar-item link ">เบิกของ/คือของ</a>
+    <a [routerLink]="['/productitem/rebeal']" class="w3-bar-item link ">เบิกของ/คือของ</a>
     <a [routerLink]="['/productcar/tre']"   class="w3-bar-item link ">ยืมรถ/คืนรถ</a>
     <a [routerLink]="['/productcar/tre']"   class="w3-bar-item link ">ฝ่ายขาย</a>
-    <a [routerLink]="['/profile/profile']"  class="w3-bar-item  link">โปรไฟล์</a>
+    <a [routerLink]="['/profile/user-profile']"  class="w3-bar-item  link">โปรไฟล์</a>
     <a [routerLink]="['/view/cash']"        class="w3-bar-item  link">ประวัติทำรายการ</a>
     <a [routerLink]="['/']"class="w3-bar-item  link">ออกจากระบบ</a>
  
@@ -14,7 +14,7 @@
   
   
 
-  <nav class="navbar navbar-dark ">
+  <nav class="navbar navbar-dark " style="height: 60px;">
     <span class="navbar-toggler-icon " (click)="onClickOpenMenu()" style="cursor: pointer;"></span>
   <span><img src="/assets/img/head.png"></span>
 </nav>
