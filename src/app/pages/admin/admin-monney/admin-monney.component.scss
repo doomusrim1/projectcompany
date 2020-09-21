@@ -1,0 +1,85 @@
+
+.buttonber {
+    padding: 0px 0px;
+    margin: 0px 100px;
+}
+
+.buttonmonney {
+    background-color:#585858;
+    padding: 5px 50px;
+    margin: 0px 4px;
+    max-width: 100%;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+  }
+  .buttonmonney-click {
+    background-color: #DD5F0A;
+    padding: 5px 50px;
+    margin: 0px 4px;
+    max-width: 100%;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .topic {
+    color: black;
+    margin: 0px 100px;
+    display: inline;
+    font-family: Prompt;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 23px;
+    // font-weight: bold;
+  }
+  
+  .TableMonney {
+    margin: 0px 100px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  // tr:nth-child(even){background-color: #c53131}
+  
+  th {
+    background-color: #535353;
+    color: white;
+  }
+  
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #DD752F;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
