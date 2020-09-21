@@ -4,11 +4,17 @@ import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.co
 import { HomeComponent } from './pages/home/home.component';
 import { MoneyComponent } from './pages/user/money/money.component';
 import { ItemComponent } from './pages/user/productitem/item/item.component';
+import { RebealComponent } from './pages/user/productitem/rebeal/rebeal.component';
+import { ReitemComponent } from './pages/user/productitem/reitem/reitem.component';
+import { UserProfileComponent } from './pages/user/profile/user-profile/user-profile.component';
 
 const routes: Routes = [
   {path: '',component: HomeComponent},
   {path: 'user/money',component: MoneyComponent},
   {path: 'productitem/item',component:ItemComponent},
+  {path: 'productitem/rebeal',component:RebealComponent},
+  {path: 'productitem/reitem',component:ReitemComponent},
+  {path: 'profile/user-profile',component:UserProfileComponent},
 
   {path: 'admin/admin-money',component: AdminMonneyComponent},
 
