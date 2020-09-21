@@ -12,6 +12,9 @@ import { ItemComponent } from './pages/user/productitem/item/item.component';
 import { RebealComponent } from './pages/user/productitem/rebeal/rebeal.component';
 import {FormsModule} from '@angular/forms';
 import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.component';
+import { ModalItemComponent } from './modals/navbar/user/modal/modal-item/modal-item.component';
+import { ModalBillComponent } from './modals/navbar/user/modal/modal-bill/modal-bill.component';
+
 
 
 @NgModule({
@@ -24,6 +27,9 @@ import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.co
     ItemComponent,
     RebealComponent,
     AdminMonneyComponent,
+    ModalItemComponent,
+    ModalBillComponent,
+
   ],
   imports: [
     BrowserModule,

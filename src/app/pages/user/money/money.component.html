@@ -1,31 +1,35 @@
 <app-user></app-user>
 <div class="container mt-10">
-    <button class="btn btn-dark button-item">เบิกเงิน</button>
-    <div style="overflow-x:auto;">
-        <table class="table table-condensed">
+<app-modal-bill></app-modal-bill>
+<app-modal-item></app-modal-item>
+    <button class="btn btn-dark button-item mt-50"  data-toggle="modal" data-target="#myModal">เบิกเงิน</button>
+    <div class="ox-a mt-100">
+      <span><b>รายการเบิกเงิน</b></span>
+        <table class="table ">
             <thead>
               <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
+                <th>รหัส</th>
+                <th>ชื่อ</th>
+                <th>รายการ</th>
+                <th>จำนวนเงิน</th>
+                <th>บิล</th>
+                <th>สถานะ</th>
+                <th>วันที่</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
+                <td>001</td>
+                <td>สมใจมีสุข</td>
+                <td>-</td>
+                <td>-</td>
+                <td><a style="cursor: pointer;" data-toggle="modal" data-target="#modal2">มี</a></td>
+                <td>-</td>
+                <td>19/02/2563</td>
+                <td><button class="btn btn-danger">ยกเลิก</button></td>
               </tr>
-              <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-              </tr>
-              <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-              </tr>
+        
             </tbody>
           </table>
         </div>

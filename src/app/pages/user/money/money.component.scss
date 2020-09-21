@@ -1,10 +1,31 @@
 .mt-10{
     margin-top:10px;
 }
+.mt-100{
+    margin-top:100px;
+}
 td{
     background-color:white;
 }
-tr{
+th{
     background-color:black;
     color: white;
+}
+table{
+    color:black;
+}
+.ox-a{
+    overflow-x:auto;
+}
+th{
+    background-color: rgba(black,0.59);
+}
+button{
+    box-shadow: 0px 1px 3px rgba(orange,0.3);
+}
+.mt-50{
+    margin-top:50px;
+}
+span{
+    font-size: 25px;
 }

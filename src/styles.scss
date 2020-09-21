@@ -41,7 +41,7 @@ nav {
     padding-top: 50px;
   }
   table {
-    box-shadow: 0px 1px 1px black;
+    box-shadow: 0px 1px 3px black;
   }
   .btn-darka{
     background-color:rgba(#060606,0.59);
@@ -92,10 +92,6 @@ nav {
   span{
     color:black;
   }
- 
-  button:hover {
-    background-color: #DD752F;
-  }
   
   .content-text:visited{
     color:#DD752F;
@@ -107,6 +103,6 @@ nav {
   }
   body {
     background-color: #CCCCCC;
-    
+    font-family: 'Prompt', sans-serif;
   }
  
