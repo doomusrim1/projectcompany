@@ -1,17 +1,14 @@
 <app-user></app-user>
 <div class="container">
-<div class="btn-group mt-50" style="display: table;" role="group" aria-label="Basic example" >
-    <button [routerLink]="['/productitem/rebeal']" type="button" class="btn  button-from">คลัง</button>
-    <button [routerLink]="['/productitem/item']" type="button" class="btn  button-orange">เบิกของ</button>
-    <button [routerLink]="['/productitem/reitem']" type="button" class="btn button-from">คืนของ</button>
-  </div>
-  <div class="row mt-50" >
-      <div class="col">
-          <button type="button" class="btn btn-secondary button-from" style="width: 200px;max-width: 100%;">คำร้องขอเบิกเงิน</button>
-        </div>
-    </div>
-  <div class="ox-a mt-100">
-    <span>รายการเบิกของ</span>
+
+
+  <app-tab-menu></app-tab-menu>
+
+  <div class=" ox-a mt-100">
+    <span class="font-25">รายการเบิกของ</span>
+      <button type="button" class="btn btn-secondary button-from" style="width: 200px;float: right;">
+      คำร้องขอเบิกเงิน
+    </button>
       <table class="table ">
           <thead>
             <tr>

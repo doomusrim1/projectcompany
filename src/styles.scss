@@ -19,8 +19,11 @@ nav {
     height: 47px;
   
   }
+  .colors-white{
+    color: white;
+   }
   a,table,button{
-      font-size: 16px;
+      font-size: 18px;
   }
   p {
     padding-top: 50px;
@@ -56,10 +59,6 @@ nav {
       width: 100px;
       box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
   }
-  .color-white {
-    color: white;
-  }
-  
   .size-imgmenu {
     width: 50px;
     height: 50px;
@@ -74,7 +73,7 @@ nav {
     margin-top:3px;
   }
   .link:hover {
-    background-color: #CCCCCC;
+    background-color: #eeeded;
     box-shadow: 0px 0px 1px black;
     margin-top:3px;
   }
@@ -99,7 +98,7 @@ nav {
       color:white;
   }
   body {
-    background-color: #CCCCCC;
+    background-color: #eeeded;
     font-family: 'Prompt', sans-serif;
   }
   th{
@@ -111,4 +110,7 @@ td{
 }
 .mt-100{
   margin-top:100px;
+}
+.colors-black{
+  color:black;
 }
