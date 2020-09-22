@@ -1,8 +1,18 @@
 <app-user></app-user>
 <div class="container">
 
-
-  <app-tab-menu></app-tab-menu>
+  <ul class="nav nav-tabs mt-50" style="text-align: center;" >
+    <li class="nav-item " >
+      <a  [routerLink]="['/productitem/rebeal']"  class="nav-link colors-black  button-dark"  >คลัง</a>
+    </li>
+    <li class="nav-item" >
+      <a  [routerLink]="['/productitem/item']"    class="nav-link colors-black button-orange "  >เบิกของ</a>
+    </li>
+    <li class="nav-item" >
+      <a  [routerLink]="['/productitem/reitem']"  class="nav-link colors-black button-dark"  >คืนของ</a>
+    </li>
+  </ul>
+ 
 
   <div class=" ox-a mt-100">
     <span class="font-25">รายการเบิกของ</span>
