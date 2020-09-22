@@ -17,7 +17,6 @@ import { ModalBillComponent } from './modals/navbar/user/modal/modal-bill/modal-
 import { ReitemComponent } from './pages/user/productitem/reitem/reitem.component';
 import { UserProfileComponent } from './pages/user/profile/user-profile/user-profile.component';
 import { AdminMonneyAllComponent } from './pages/admin/admin-monney-all/admin-monney-all.component';
-import { TabMenuComponent } from './modals/navbar/user/tab-menu/tab-menu.component';
 import { MenuBerMonneyComponent } from './modals/navbar/admin/menu-ber/menu-ber-monney/menu-ber-monney.component';
 
 
@@ -39,7 +38,6 @@ import { MenuBerMonneyComponent } from './modals/navbar/admin/menu-ber/menu-ber-
     ReitemComponent,
     UserProfileComponent,
     AdminMonneyAllComponent,
-    TabMenuComponent,
     MenuBerMonneyComponent,
 
   ],
