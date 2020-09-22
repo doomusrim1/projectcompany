@@ -1,90 +1,89 @@
 <app-admin></app-admin>
 
 <div class="container">
-<div class="buttonber">
-  
   <br />
-  <button [routerLink]="['/admin-money']" class="buttonmonney-click" style="float: left">เบิกเงิน</button>
+  <button
+    [routerLink]="['/admin-money']"
+    class="buttonmonney-click"
+    style="float: left"
+  >
+    เบิกเงิน
+  </button>
 
-  <div class="dropdown">
-    <button class="buttonmonney" style="float: left">รายการทั้งหมด</button>
-    <div class="dropdown-content">
-      <a [routerLink]="['/admin-money-all']">เบิกเงินทั้งหมด</a>
-      <a [routerLink]="['/admin-money-report']">รายการเบิกเงินย้อนหลัง</a>
+  <button
+    [routerLink]="['/admin-money-all']"
+    class="buttonmonney"
+    style="float: left"
+  >
+    รายการเบิกเงิน
+  </button>
+  <h2 class="topic">รายการเบิกเงินพนักงานทั้งหมด</h2>
+
+  <br />
+
+  <div class="TableMonney">
+    <table>
+      <tr>
+        <th>รหัส</th>
+        <th>ชื่อ-สกุล</th>
+        <th>วันที่เบิก</th>
+        <th>จำนวน</th>
+        <th>รายละเอียด</th>
+        <th>สถานะ</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <div class="pagination" style="float: right">
+      <a href="#">&laquo;</a>
+      <a class="active" href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">&raquo;</a>
     </div>
   </div>
-</div>
-
-<br />
-<br />
-<h2 class="topic">รายการเบิกเงินพนักงานทั้งหมด</h2>
-
-<br />
-<br />
-
-<div class="TableMonney">
-  <table>
-    <tr>
-      <th>รหัส</th>
-      <th>ชื่อ-สกุล</th>
-      <th>วันที่เบิก</th>
-      <th>จำนวน</th>
-      <th>รายละเอียด</th>
-      <th>สถานะ</th>
-      <th></th>
-      <th></th>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </table>
-  <br />
-  <br />
-  <br />
-  <div class="pagination" style="float: right">
-    <a href="#">&laquo;</a>
-    <a class="active" href="#">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-    <a href="#">&raquo;</a>
-  </div>
-</div>
 </div>
