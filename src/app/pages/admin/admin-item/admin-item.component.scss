@@ -1,0 +1,73 @@
+.tab {
+  background-color: #eeeded;
+}
+.tab button {
+  background-color: #585858;
+  color: #fff;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0px 2px;
+  border-radius: 16px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.tab button:hover {
+  background-color: #DD5F0A;
+}
+.tab .button-click {
+  background-color: #DD5F0A;
+  padding: 10px 50px;
+}
+.tab .button {
+  padding: 10px 52px;
+}
+.topic {
+  color: black;
+  margin: 10px 0px;
+  font-family: Prompt;
+  font-style: normal;
+  font-size: 35px;
+}
+
+.table-item {
+  margin: 0px 0px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 20px;
+  background-color: white;
+}
+
+// tr:nth-child(even){background-color: #c53131}
+
+th {
+  background-color: #535353;
+  color: white;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #DD752F;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}

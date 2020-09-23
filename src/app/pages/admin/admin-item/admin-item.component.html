@@ -2,26 +2,15 @@
 
 <div class="container">
   <br />
-  <button
-    [routerLink]="['/admin-money']"
-    class="buttonmonney-click"
-    style="float: left"
-  >
-    เบิกเงิน
-  </button>
+  <div class="tab">
+    <button [routerLink]="['/admin-money']" class="button-click">เบิกของ</button>
+    <button [routerLink]="['/admin-money']" class="button">คืนของ</button>
+    <button [routerLink]="['/admin-money']">รายการทั้งหมด</button>
+  </div>
 
-  <button
-    [routerLink]="['/admin-money-all']"
-    class="buttonmonney"
-    style="float: left"
-  >
-    รายการเบิกเงิน
-  </button>
-  <h2 class="topic">รายการเบิกเงินพนักงานทั้งหมด</h2>
+  <h2 class="topic">รายการเบิกเงิน</h2>
 
-  <br />
-
-  <div class="TableMonney">
+  <div class="table-item responsive">
     <table>
       <tr>
         <th>รหัส</th>
@@ -86,4 +75,5 @@
       <a href="#">&raquo;</a>
     </div>
   </div>
+
 </div>

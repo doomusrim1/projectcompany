@@ -1,46 +1,33 @@
 
-.buttonber {
-    padding: 0px 0px;
-    margin: 0px 0px;
+.tab {
+  background-color: #eeeded;
 }
-
-.buttonmonney {
-    background-color:#585858;
-    padding: 5px 30px;
-    margin: 0px 4px;
-    max-width: 100%;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-  }
-  .buttonmonney-click {
-    background-color: #DD5F0A;
-    padding: 5px 50px;
-    margin: 0px 4px;
-    max-width: 100%;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-  }
-
+.tab button {
+  background-color: #585858;
+  color: #fff;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0px 2px;
+  border-radius: 16px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.tab button:hover {
+  background-color: #DD5F0A;
+}
+.tab .button-click {
+  background-color: #DD5F0A;
+  padding: 10px 50px;
+}
   .topic {
     color: black;
-    margin: 0px 0px;
+    margin: 10px 0px;
     font-family: Prompt;
     font-style: normal;
     font-size: 35px;
-    line-height: 23px;
-    // font-weight: bold;
   }
   
   .TableMonney {

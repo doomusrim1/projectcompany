@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AdminMonneyAllComponent } from './pages/admin/admin-monney-all/admin-monney-all.component';
+import { AdminCarComponent } from './pages/admin/admin-car/admin-car.component';
+import { AdminHumanComponent } from './pages/admin/admin-human/admin-human.component';
+import { AdminItemComponent } from './pages/admin/admin-item/admin-item.component';
+import { AdminMonneyAllComponent } from './pages/admin/admin-monney/admin-monney-all/admin-monney-all.component';
 import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.component';
+import { AdminSellComponent } from './pages/admin/admin-sell/admin-sell.component';
+import { AdminStoreComponent } from './pages/admin/admin-store/admin-store.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MoneyComponent } from './pages/user/money/money.component';
 import { ItemComponent } from './pages/user/productitem/item/item.component';
@@ -19,6 +24,11 @@ const routes: Routes = [
 
   {path: 'admin-money',component: AdminMonneyComponent},
   {path: 'admin-money-all',component: AdminMonneyAllComponent},
+  {path: 'admin-item',component: AdminItemComponent},
+  {path: 'admin-car',component: AdminCarComponent},
+  {path: 'admin-human',component: AdminHumanComponent},
+  {path: 'admin-store',component: AdminStoreComponent},
+  {path: 'admin-sell',component: AdminSellComponent},
 ];
 
 @NgModule({
