@@ -18,6 +18,7 @@ import { ViewDownitemComponent } from './pages/user/view/view-downitem/view-down
 import { ViewItemComponent } from './pages/user/view/view-item/view-item.component';
 import { ViewMoneyComponent } from './pages/user/view/view-money/view-money.component';
 
+
 const routes: Routes = [
   {path: '',component: HomeComponent},
   {path: 'user/money',component: MoneyComponent},
