@@ -20,6 +20,8 @@ import { AdminMonneyAllComponent } from './pages/admin/admin-monney-all/admin-mo
 import { MenuBerMonneyComponent } from './modals/navbar/admin/menu-ber/menu-ber-monney/menu-ber-monney.component';
 import { UpcarComponent } from './pages/user/car/upcar/upcar.component';
 import { RecarComponent } from './pages/user/car/recar/recar.component';
+import { SaleMoneyComponent } from './pages/user/sale/sale-money/sale-money.component';
+import { SaleAddmoneyComponent } from './pages/user/sale/sale-addmoney/sale-addmoney.component';
 
 
 
@@ -43,6 +45,8 @@ import { RecarComponent } from './pages/user/car/recar/recar.component';
     MenuBerMonneyComponent,
     UpcarComponent,
     RecarComponent,
+    SaleMoneyComponent,
+    SaleAddmoneyComponent,
 
   ],
   imports: [
