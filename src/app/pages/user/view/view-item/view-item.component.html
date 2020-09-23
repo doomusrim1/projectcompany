@@ -1,0 +1,55 @@
+<app-user></app-user>
+<div class="container">
+
+  <ul class="nav nav-tabs mt-50" style="text-align: center;"  >
+    <li class="nav-item " >
+      <a  [routerLink]="['/view/view-money']"  class="nav-link colors-black  button-dark"  >เบิกเงิน</a>
+    </li>
+    <li class="nav-item" >
+      <a  [routerLink]="['/view/view-item']"    class="nav-link colors-black  button-orange"  >เบิกของ</a>
+    </li>
+    <li class="nav-item" >
+      <a  [routerLink]="['/view/view-downitem']"  class="nav-link colors-black button-dark"  >คืนของ</a>
+    </li>
+    <li class="nav-item" >
+        <a  [routerLink]="['/view/view-car']"  class="nav-link colors-black button-dark"  >ยืมรถ</a>
+      </li>
+      <li class="nav-item" >
+        <a  [routerLink]="['/view/view-downcar']"  class="nav-link colors-black button-dark"  >คืนรถ</a>
+      </li>
+  </ul>
+ 
+
+  <div class=" ox-a mt-100">
+    <span class="font-25">รายการเบิกของ</span>
+      <table class="table ">
+          <thead>
+            <tr>
+              <th>รหัส</th>
+              <th>ชื่อ-สกุล</th>
+              <th>วันที่เบิก</th>
+              <th>รายการ</th>
+              <th>ชิ้น</th>
+              <th>สถานะ</th>
+              <th>หมายเหตุ</th>
+              <th>อนุมัติโดย</th>
+              <th>ข้อมูล</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td><button class="btn button-data">เอกสาร</button></td>
+            </tr>
+      
+          </tbody>
+        </table>
+      </div>
+</div>
