@@ -22,6 +22,11 @@ import { UpcarComponent } from './pages/user/car/upcar/upcar.component';
 import { RecarComponent } from './pages/user/car/recar/recar.component';
 import { SaleMoneyComponent } from './pages/user/sale/sale-money/sale-money.component';
 import { SaleAddmoneyComponent } from './pages/user/sale/sale-addmoney/sale-addmoney.component';
+import { ViewMoneyComponent } from './pages/user/view/view-money/view-money.component';
+import { ViewItemComponent } from './pages/user/view/view-item/view-item.component';
+import { ViewDownitemComponent } from './pages/user/view/view-downitem/view-downitem.component';
+import { ViewCarComponent } from './pages/user/view/view-car/view-car.component';
+import { ViewDowncarComponent } from './pages/user/view/view-downcar/view-downcar.component';
 
 
 
@@ -47,6 +52,11 @@ import { SaleAddmoneyComponent } from './pages/user/sale/sale-addmoney/sale-addm
     RecarComponent,
     SaleMoneyComponent,
     SaleAddmoneyComponent,
+    ViewMoneyComponent,
+    ViewItemComponent,
+    ViewDownitemComponent,
+    ViewCarComponent,
+    ViewDowncarComponent,
 
   ],
   imports: [

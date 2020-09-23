@@ -5,17 +5,10 @@
     a:hover{
         color:white;
         }
-        .button-orange{
-            background-color: #DD752F;
-            color:white;
+
+          .button-item {
+            width: 200px;
+            float: right;
             height: 50px;
-            width: 100px;
-            box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
-        }
-        .button-dark{
-            background-color: rgba(0,0,0,0.59);
-            color:white;
-            height: 50px;
-            width: 100px;
-            box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
-        }    
+            background-color: rgba(0, 0, 0, 0.59);
+          }
