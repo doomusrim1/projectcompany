@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-rebeal',
-  templateUrl: './rebeal.component.html',
-  styleUrls: ['./rebeal.component.scss']
+  selector: 'app-view-downitem',
+  templateUrl: './view-downitem.component.html',
+  styleUrls: ['./view-downitem.component.scss']
 })
-export class RebealComponent implements OnInit {
+export class ViewDownitemComponent implements OnInit {
   code:string = "54451445";
   name:string = "สมใจ มีสุข";
   constructor() { }

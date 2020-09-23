@@ -1,0 +1,49 @@
+<app-user></app-user>
+<div class="container">
+
+    <ul class="nav nav-tabs mt-50" style="text-align: center;" >
+      <li class="nav-item " >
+        <a  [routerLink]="['/car/user-upcar']"  class="nav-link colors-black  button-dark"  >ยืมรถ</a>
+      </li>
+      <li class="nav-item" >
+        <a  [routerLink]="['/car/user-recar']"    class="nav-link colors-black button-orange "  >คืนรถ</a>
+      </li>
+    </ul>
+   
+  <div class="row mt-100"> 
+  <div class="col">
+    <span class="font-25">รายการยืมรถ</span>
+
+  </div>
+  </div>
+    <div class=" ox-a row">
+      <div class="col">
+        <div class="font-20"> {{name}} รหัสพนักงาน {{code}}</div>
+        <table class="table ">
+            <thead>
+              <tr>
+                <th>รหัส</th>
+                <th>ยี่ห้อ</th>
+                <th>ทะเบียนรถ</th>
+                <th>ออกรถ/ไมล์</th>
+                <th>สถานะ</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="btn button-data">ดูข้อมูล</button></td>
+                <td><button class="btn button-data">คืนรถ</button></td>
+              </tr>
+        
+            </tbody>
+          </table>
+        </div>
+        </div>
+  </div>

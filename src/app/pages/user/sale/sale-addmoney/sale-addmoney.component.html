@@ -1,0 +1,50 @@
+<app-user></app-user>
+<div class="container">
+
+  <ul class="nav nav-tabs mt-50" style="text-align: center;" >
+    <li class="nav-item " >
+      <a  [routerLink]="['/sale/sale-money']"  class="nav-link colors-black  button-orangea"  >บันทึกการเบิกเงิน</a>
+    </li>
+  </ul>
+ 
+
+
+  <div class="row mt-100">
+    <div class="col">   
+      <span class="font-25">บันทึกค่าใช้จ่าย</span>
+      <button type="button" class="btn colors-white  button-item" >
+     บันทึกค่าใช้จ่าย
+    </button>
+    </div>
+  </div>
+
+  <div class="row ox-a">
+    <div class=" col  ">
+    <div class="font-20">  รอบ {{round}}  {{name}} รหัสพนักงาน {{code}}</div>
+      <table class="table ">
+          <thead>
+            <tr>
+              <th>วันที่เบิก</th>
+              <th>รายการ</th>
+              <th>จำนนวเงิน</th>
+              <th>จำนนเงินคงเหลือ</th>
+              <th>บิล</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>- </td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+
+            </tr>
+      
+          </tbody>
+        </table>
+      </div>
+</div>
+
+</div>

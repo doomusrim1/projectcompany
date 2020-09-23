@@ -20,8 +20,7 @@ export class HomeComponent implements OnInit {
      if(this.username  && this.password   ){
     if(this.username == 'user' && this.password == 1234){  
       alert('สำเร็จ');
-            this.router.navigate(['/user/money']);   
-
+      this.router.navigate(['/user/money']);   
     }
     if(this.username == 'admin' && this.password == 1234){
       alert('สำเร็จ');

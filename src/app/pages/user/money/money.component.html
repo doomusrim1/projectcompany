@@ -2,14 +2,26 @@
 <div class="container ">
 <app-modal-bill></app-modal-bill>
 <app-modal-item></app-modal-item>
-    <button class="btn btn-dark button-item mt-50"  data-toggle="modal" data-target="#myModal">เบิกเงิน</button>
-    <div class="ox-a mt-100">
-      <span>รายการเบิกเงิน</span>
+<ul class="nav nav-tabs mt-50" style="text-align: center;" >
+  <li class="nav-item " >
+    <a  [routerLink]="['/user/money']"  class="nav-link colors-black  button-orangea " >เบิกเงิน</a>
+  </li>
+</ul>
+ <div class="row mt-100">
+ <div class="col">
+  <span class="font-25">รายการเบิกเงิน</span>
+  <button type="button" class="btn colors-white  button-item" data-toggle="modal" data-target="#myModal">
+    เบิกเงิน
+  </button>
+ </div>
+ </div>
+
+    <div class="ox-a row">
+      <div class="col">
+        <div class="font-20"> {{name}} รหัสพนักงาน {{code}}</div>
         <table class="table ">
             <thead>
               <tr>
-                <th>รหัส</th>
-                <th>ชื่อ</th>
                 <th>รายการ</th>
                 <th>จำนวนเงิน</th>
                 <th>บิล</th>
@@ -20,18 +32,17 @@
             </thead>
             <tbody>
               <tr>
-                <td>001</td>
-                <td>สมใจมีสุข</td>
                 <td>-</td>
                 <td>-</td>
                 <td><a style="cursor: pointer;" data-toggle="modal" data-target="#myModala">มี</a></td>
                 <td>-</td>
                 <td>19/02/2563</td>
-                <td><button class="btn btn-danger">ยกเลิก</button></td>
+                <td><button class="btn button-close">ยกเลิก</button></td>
               </tr>
         
             </tbody>
           </table>
+        </div>
         </div>
     </div>
 
