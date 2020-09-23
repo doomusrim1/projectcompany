@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./money.component.scss']
 })
 export class MoneyComponent implements OnInit {
-
+  code:string = "54451445";
+  name:string = "สมใจ มีสุข";
   constructor() { }
 
   ngOnInit(): void {

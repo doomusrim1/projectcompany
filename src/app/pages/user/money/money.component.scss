@@ -27,3 +27,8 @@ span{
     height: 50px;
     background-color: rgba(0, 0, 0, 0.59);
   }
+  @media only screen and(max-width:286px){
+    .button-item {
+      float: left;
+    }
+  } 

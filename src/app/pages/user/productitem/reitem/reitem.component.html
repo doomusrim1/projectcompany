@@ -14,14 +14,19 @@
     </li>
   </ul>
  
-  <div class="ox-a mt-100">
-    <span>รายการคืนของ</span>
-    <button type="button" class="btn button-item colors-white" >คำร้องขอคืนของ</button>
+  <div class="row mt-100">
+    <div class="col">
+      <span class="font-25">รายการคืนของ</span>
+      <button type="button" class="btn button-item colors-white" >คำร้องขอคืนของ</button>
+    </div>
+  </div>
+  <div class=" row ox-a">
+    <div class="col">
+      <div class="font-20"> {{name}} รหัสพนักงาน {{code}}</div>
       <table class="table ">
           <thead>
             <tr>
               <th>รหัส</th>
-              <th>ชื่อ</th>
               <th>รายการ</th>
               <th>จำนวนเงิน</th>
               <th>บิล</th>
@@ -33,8 +38,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>001</td>
-              <td>สมใจมีสุข</td>
+              <td>-</td>
               <td>-</td>
               <td>-</td>
               <td><a style="cursor: pointer;" data-toggle="modal" data-target="#myModala">มี</a></td>
@@ -46,5 +50,6 @@
       
           </tbody>
         </table>
+        </div>
       </div>
 </div>
