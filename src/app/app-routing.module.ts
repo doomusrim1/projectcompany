@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { AdminMonneyAllComponent } from './pages/admin/admin-monney-all/admin-monney-all.component';
 import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.component';
 import { HomeComponent } from './pages/home/home.component';
+import { RecarComponent } from './pages/user/car/recar/recar.component';
+import { UpcarComponent } from './pages/user/car/upcar/upcar.component';
 import { MoneyComponent } from './pages/user/money/money.component';
 import { ItemComponent } from './pages/user/productitem/item/item.component';
 import { RebealComponent } from './pages/user/productitem/rebeal/rebeal.component';
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path: 'productitem/rebeal',component:RebealComponent},
   {path: 'productitem/reitem',component:ReitemComponent},
   {path: 'profile/user-profile',component:UserProfileComponent},
+  {path: 'car/user-upcar',component:UpcarComponent},
+  {path: 'car/user-recar',component:RecarComponent},
 
   {path: 'admin-money',component: AdminMonneyComponent},
   {path: 'admin-money-all',component: AdminMonneyAllComponent},

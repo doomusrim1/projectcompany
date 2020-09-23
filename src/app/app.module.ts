@@ -17,6 +17,8 @@ import { ModalBillComponent } from './modals/navbar/user/modal/modal-bill/modal-
 import { ReitemComponent } from './pages/user/productitem/reitem/reitem.component';
 import { UserProfileComponent } from './pages/user/profile/user-profile/user-profile.component';
 import { AdminMonneyAllComponent } from './pages/admin/admin-monney-all/admin-monney-all.component';
+import { UpcarComponent } from './pages/user/car/upcar/upcar.component';
+import { RecarComponent } from './pages/user/car/recar/recar.component';
 
 
 
@@ -37,6 +39,8 @@ import { AdminMonneyAllComponent } from './pages/admin/admin-monney-all/admin-mo
     ReitemComponent,
     UserProfileComponent,
     AdminMonneyAllComponent,
+    UpcarComponent,
+    RecarComponent,
 
   ],
   imports: [
