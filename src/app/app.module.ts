@@ -18,6 +18,8 @@ import { ReitemComponent } from './pages/user/productitem/reitem/reitem.componen
 import { UserProfileComponent } from './pages/user/profile/user-profile/user-profile.component';
 import { AdminMonneyAllComponent } from './pages/admin/admin-monney-all/admin-monney-all.component';
 import { MenuBerMonneyComponent } from './modals/navbar/admin/menu-ber/menu-ber-monney/menu-ber-monney.component';
+import { UpcarComponent } from './pages/user/car/upcar/upcar.component';
+import { RecarComponent } from './pages/user/car/recar/recar.component';
 
 
 
@@ -39,6 +41,8 @@ import { MenuBerMonneyComponent } from './modals/navbar/admin/menu-ber/menu-ber-
     UserProfileComponent,
     AdminMonneyAllComponent,
     MenuBerMonneyComponent,
+    UpcarComponent,
+    RecarComponent,
 
   ],
   imports: [
