@@ -1,35 +1,36 @@
 <app-user></app-user>
-<div class="container">
 
+<div class="container">
+<div style="background-color: white;height: auto;box-shadow: 0px 0px 6px rgba(0,0,0,0.1);border-radius: 5px;padding-left: 30px;padding-right: 30px;">
   <ul class="nav nav-tabs mt-50" style="text-align: center;" >
     <li class="nav-item " >
-      <a  href="/productitem/rebeal"  class="nav-link colors-black   button-orange"  >คลัง</a>
+      <a  href="/productitem/rebeal"  class="nav-link colors-black"  style="border-bottom: 2px solid #DD752F;">คลัง</a>
     </li>
     <li class="nav-item" >
-      <a   href="/productitem/item"   class="nav-link colors-black  button-dark"  >เบิกของ</a>
+      <a   href="/productitem/item"   class="nav-link colors-black"  >เบิกของ</a>
     </li>
     <li class="nav-item" >
-      <a   href="/productitem/reitem"  class="nav-link colors-black  button-dark"  >คืนของ</a>
+      <a   href="/productitem/reitem"  class="nav-link colors-black"  >คืนของ</a>
     </li>
   </ul>
+  <div class="input-group input-search " style="padding: 10px;">
+    <input class="form-control" type="search" placeholder="ค้นหา" >
+    <button class="btn " style="background-color:#DD752F;color:white;"> ค้นหา</button>
+
+  </div>
+</div>
  
-
- <div class="row mt-100">
-   <div class="col">
-    <span class="font-25">คลัง</span>
-    <div class="input-group input-search" >
-      <input class="form-control" type="search" placeholder="ค้นหา" >
-      <button class="btn ml-1" style="background-color:#DD752F;color:white;"> ค้นหา</button>
-
+<div style="background-color: white;height: auto;box-shadow: 0px 0px 6px rgba(0,0,0,0.1);border-radius: 5px;">
+  <div class="row mt-50" style="padding-right: 30px;padding-top: 10px;padding-left: 30px;">
+    <div class="col" >
+      <span class="font-25">คลัง</span>
     </div>
-   </div>
- </div>
-  <div class="ox-a row">
+    </div>
+  <div class="ox-a row " style="padding: 30px;">
     <div class="col">
-
     <div class="font-20"> {{name}} รหัสพนักงาน {{code}}</div>
 
-      <table class="table ">
+      <table class="table " >
           <thead>
             <tr>
               <th>รหัสสินค้า</th>
@@ -54,4 +55,6 @@
         </table>
       </div>
       </div>
+      </div>
+
 </div>
