@@ -37,9 +37,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>-</td>
-                <td>-</td>
+              <tr *ngFor="let item of collection.data | paginate: config">
+                <td>{{item.id}}</td>
+              <td>{{item.value}}</td>
                 <td><a style="cursor: pointer;" data-toggle="modal" data-target="#myModala">มี</a></td>
                 <td>-</td>
                 <td>19/02/2563</td>
@@ -48,6 +48,7 @@
         
             </tbody>
           </table>
+          <pagination-controls (pageChange)="pageChanged($event)" style="float: right;"></pagination-controls>
         </div>
         </div>
       </div>

@@ -34,7 +34,7 @@ import { ViewItemComponent } from './pages/user/view/view-item/view-item.compone
 import { ViewDownitemComponent } from './pages/user/view/view-downitem/view-downitem.component';
 import { ViewCarComponent } from './pages/user/view/view-car/view-car.component';
 import { ViewDowncarComponent } from './pages/user/view/view-downcar/view-downcar.component';
-
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 
@@ -77,7 +77,8 @@ import { ViewDowncarComponent } from './pages/user/view/view-downcar/view-downca
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
