@@ -2,25 +2,10 @@ span {
   font-size: 25px;
 }
 
-
-
-.button-item {
-  width: 200px;
-  float: right;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.59);
-}
-
 .input-search{
   width: 300px;max-width: 100%;
   margin: 0 auto;
   border-radius: 5px;
-}
-
-@media only screen and(max-width:376px) {
-  .input-search {
-    float: left;
-  }
 }
 
 a:hover {
