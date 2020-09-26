@@ -8,9 +8,13 @@
     >เบิกเงิน</button>
 
     <button [routerLink]="['/admin-money-all']">รายการเบิกเงิน</button>
+    <br />
+    <hr />
   </div>
 
-  <h2 class="topic">รายการเบิกเงินพนักงาน</h2>
+  <br />
+  <div class="content">
+  <h3 >รายการเบิกเงินพนักงาน</h3>
 
   <div class="TableMonney responsive">
     <table>
@@ -24,18 +28,8 @@
         <th></th>
         <th></th>
       </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
+      <tr *ngFor="let item of collection.data | paginate: config">
+        <td>{{item.id}}</td>
         <td></td>
         <td></td>
         <td></td>
@@ -44,37 +38,24 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+      
     </table>
     <br />
     <br />
     <br />
-    <div class="pagination" style="float: right">
+
+    <pagination-controls (pageChange)="pageChanged($event)" style="float: right;" class="pagination-show">
+    </pagination-controls>
+
+    <!-- <div class="pagination" style="float: right">
       <a href="#">&laquo;</a>
       <a class="active" href="#">1</a>
       <a href="#">2</a>
       <a href="#">3</a>
       <a href="#">4</a>
       <a href="#">&raquo;</a>
-    </div>
+    </div> -->
   </div>
+</div>
+
 </div>
