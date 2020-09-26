@@ -8,7 +8,30 @@ import { Component, OnInit } from '@angular/core';
 export class ItemComponent implements OnInit {
   code:string = "54451445";
   name:string = "สมใจ มีสุข";
-  constructor() { }
+  config: any;
+  collection = { count: 25, data: [] };
+  constructor() {
+
+    //Create dummy data
+    for (var i = 0; i < this.collection.count; i++) {
+      this.collection.data.push(
+        {
+          id: i + 1,
+          value: "items number " + (i + 1)
+        }
+      );
+    }
+
+    this.config = {
+      itemsPerPage: 5,
+      currentPage: 1,
+      totalItems: this.collection.count
+    };
+  }
+
+  pageChanged(event){
+    this.config.currentPage = event;
+  }
 
   ngOnInit(): void {
   }
