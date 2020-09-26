@@ -1,0 +1,34 @@
+.tab-menu{
+    background-color: white;
+    height: auto;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.tabmenu-padding-bottom{
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.tabmenu-padding-top{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.p-30{
+    padding: 30px;
+}
+.item-border{
+    border-bottom: 2px solid #DD752F;
+}
+.pd-30{
+    padding: 30px;
+}
+.button-item {
+    width: 200px;
+    float: right;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.59);
+  }
