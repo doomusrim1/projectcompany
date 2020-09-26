@@ -1,17 +1,20 @@
 
 .tab {
-  background-color: #eeeded;
+  background-color: #ffffff;
+  height: 52px ;
+  border-radius: 5px;
+  padding: 2px 20px;
 }
+
 .tab button {
-  background-color: #585858;
-  color: #fff;
+  background-color: #ffffff;
+  color: black;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 3px 20px;
   margin: 0px 2px;
-  border-radius: 16px;
   transition: 0.3s;
   font-size: 20px;
 }
@@ -19,15 +22,20 @@
   background-color: #DD5F0A;
 }
 .tab .button-click {
-  background-color: #DD5F0A;
-  padding: 10px 50px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #DD5F0A;
+  padding: 3px 20px;
 }
-  .topic {
-    color: black;
-    margin: 10px 0px;
+.content {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 2px 20px;
+}
+h3 {
     font-family: Prompt;
     font-style: normal;
     font-size: 35px;
+    padding-top: 20px;
   }
   
   .TableMonney {
