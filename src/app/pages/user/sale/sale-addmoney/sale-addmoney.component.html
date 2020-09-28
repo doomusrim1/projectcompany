@@ -1,17 +1,13 @@
 <app-user></app-user>
 <div class="container">
 
-  <div style="background-color: white;height: auto;box-shadow: 0px 0px 6px rgba(0,0,0,0.1);border-radius: 5px;padding-left: 30px;padding-right: 30px;padding-bottom: 10px;">
-    <ul class="nav nav-tabs mt-50" style="text-align: center;padding-top: 10px;" >
-    <li class="nav-item " >
-      <a  [routerLink]="['/sale/sale-money']"   class="nav-link colors-black"   >บันทึกการเบิกเงิน</a>
-    </li>
-  </ul>
+  <div class="tab-menu tabmenu-padding-bottom">
+    <app-tab-sale></app-tab-sale>
   </div>
 
 
-  <div style="background-color: white;height: auto;box-shadow: 0px 0px 6px rgba(0,0,0,0.1);border-radius: 5px;">
-    <div class="row mt-50" style="padding-right: 30px;padding-top: 10px;padding-left: 30px;"> 
+  <div class="tab-menu">
+    <div class="row mt-50 tabmenu-padding-top"> 
     <div class="col">   
       <span class="font-25">บันทึกค่าใช้จ่าย</span>
       <button type="button" class="btn colors-white  button-item" >
@@ -20,8 +16,8 @@
     </div>
   </div>
 
-  <div class="row ox-a" style="padding: 30px;">
-    <div class=" col  ">
+  <div class="  row pd-30">
+    <div class=" col  ox-a">
     <div class="font-20">  รอบ {{round}}  {{name}} รหัสพนักงาน {{code}}</div>
       <table class="table ">
           <thead>

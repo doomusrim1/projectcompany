@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
+  getClass(){
+    return "link"
+  }
   code:string = "54451445";
   name:string = "สมใจ มีสุข";
   config: any;

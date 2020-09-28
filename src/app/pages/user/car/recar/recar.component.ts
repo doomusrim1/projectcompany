@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recar.component.scss']
 })
 export class RecarComponent implements OnInit {
+
   code:string = "54451445";
   name:string = "สมใจ มีสุข";
   constructor() { }

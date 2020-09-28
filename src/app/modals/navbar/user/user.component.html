@@ -1,20 +1,20 @@
 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
-    <a href="javascript:void(0)" (click)="onClickCloseMenu()" class="w3-bar-item color-orange w3-large"
-      style="height:  59px; "> <span style="float: right;">&times;</span></a>
+    <a href="javascript:void(0)" (click)="onClickCloseMenu()" class="w3-bar-item color-orange w3-large h-59"
+      > <span style="float: right;">&times;</span></a>
   
-    <a [routerLink]="['/user/money']"       class="w3-bar-item  link ">เบิกเงิน</a>
-    <a [routerLink]="['/productitem/rebeal']" class="w3-bar-item link ">เบิกของ/คือของ</a>
-    <a [routerLink]="['/car/user-upcar']"   class="w3-bar-item link ">ยืมรถ/คืนรถ</a>
-    <a [routerLink]="['/sale/sale-money']"   class="w3-bar-item link ">ฝ่ายขาย</a>
-    <a [routerLink]="['/profile/user-profile']"  class="w3-bar-item  link">โปรไฟล์</a>
-    <a [routerLink]="['/view/view-money']"        class="w3-bar-item  link">ประวัติทำรายการ</a>
-    <a [routerLink]="['/']"class="w3-bar-item  link">ออกจากระบบ</a>
+    <a [routerLink]="['/user/money']"   routerLinkActive="{{getClass()}}"    class="w3-bar-item  ">เบิกเงิน</a>
+    <a [routerLink]="['/productitem/rebeal']" routerLinkActive="{{getClass()}}" class="w3-bar-item   ">เบิกของ/คือของ</a>
+    <a [routerLink]="['/car/user-upcar']"  routerLinkActive="{{getClass()}}" class="w3-bar-item  ">ยืมรถ/คืนรถ</a>
+    <a [routerLink]="['/sale/sale-money']"  routerLinkActive="{{getClass()}}" class="w3-bar-item  ">ฝ่ายขาย</a>
+    <a [routerLink]="['/profile/user-profile']" routerLinkActive="{{getClass()}}" class="w3-bar-item  ">โปรไฟล์</a>
+    <a [routerLink]="['/view/view-money']"     routerLinkActive="{{getClass()}}"   class="w3-bar-item  ">ประวัติทำรายการ</a>
+    <a [routerLink]="['/']"  class="w3-bar-item ">ออกจากระบบ</a>
  
   </div>
   
   
 
-  <nav class="navbar navbar-dark " style="height: 60px;">
-    <span class="navbar-toggler-icon " (click)="onClickOpenMenu()" style="cursor: pointer;"></span>
+  <nav class="navbar navbar-dark " >
+    <span class="navbar-toggler-icon " (click)="onClickOpenMenu()" ></span>
   <span><img src="/assets/img/head.png"></span>
 </nav>
