@@ -39,6 +39,9 @@ import { TabCarComponent } from './modals/navbar/user/tab/tab-car/tab-car.compon
 import { TabSaleComponent } from './modals/navbar/user/tab/tab-sale/tab-sale.component';
 import { TabViewComponent } from './modals/navbar/user/tab/tab-view/tab-view.component';
 import { ModalMonneyComponent } from './modals/navbar/user/modal/modal-money/modal-monney/modal-monney.component';
+import { ModalItemComponent } from './modals/navbar/user/modal/modal-item/modal-item/modal-item.component';
+import { ModalDownitemComponent } from './modals/navbar/user/modal/modal-item/modal-downitem/modal-downitem.component';
+import { ModalDataitemComponent } from './modals/navbar/user/modal/modal-item/modal-dataitem/modal-dataitem.component';
 
 
 
@@ -80,6 +83,9 @@ import { ModalMonneyComponent } from './modals/navbar/user/modal/modal-money/mod
     TabSaleComponent,
     TabViewComponent,
     ModalMonneyComponent,
+    ModalItemComponent,
+    ModalDownitemComponent,
+    ModalDataitemComponent,
 
   ],
   imports: [
