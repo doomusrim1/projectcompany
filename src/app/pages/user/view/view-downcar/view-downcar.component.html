@@ -1,32 +1,16 @@
 <app-user></app-user>
 <div class="container">
 
-  <ul class="nav nav-tabs mt-50" style="text-align: center;"  >
-    <li class="nav-item " >
-      <a  [routerLink]="['/view/view-money']"  class="nav-link colors-black  button-dark"  >เบิกเงิน</a>
-    </li>
-    <li class="nav-item" >
-      <a  [routerLink]="['/view/view-item']"    class="nav-link colors-black  button-dark"  >เบิกของ</a>
-    </li>
-    <li class="nav-item" >
-      <a  [routerLink]="['/view/view-downitem']"  class="nav-link colors-black button-dark"  >คืนของ</a>
-    </li>
-    <li class="nav-item" >
-        <a  [routerLink]="['/view/view-car']"  class="nav-link colors-black button-dark"  >ยืมรถ</a>
-      </li>
-      <li class="nav-item" >
-        <a  [routerLink]="['/view/view-downcar']"  class="nav-link colors-black button-orange"  >คืนรถ</a>
-      </li>
-  </ul>
+  <div class="tab-menu tabmenu-padding-bottom" >
+    <app-tab-view > </app-tab-view>
+</div>
  
-  <div class="row mt-100">
-    <div class="col">
+<div class="tab-menu">
+  <div class="row mt-50 tabmenu-padding-top"> 
       <span class="font-25">ประวัติการคืนรถ</span>
     </div>
-    </div>
-
-  <div class=" ox-a row">
-    <div class="col">
+    <div class="  row pd-30">
+      <div class="col ox-a">
       <div class="font-20"> {{name}} รหัสพนักงาน {{code}}</div>
       <table class="table ">
           <thead>
@@ -58,5 +42,6 @@
           </tbody>
         </table>
         </div>
+      </div>
       </div>
 </div>

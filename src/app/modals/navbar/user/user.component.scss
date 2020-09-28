@@ -3,7 +3,18 @@ a{
     font-size: 18px;
     font-family: 'Prompt', sans-serif;
 }
-a:hover{
-    color: #DD752F;
+a{
+  color: black;
 }
-
+.link{
+  color: #DD752F;
+}
+  nav{
+    height: 60px;
+  }
+  span{
+    cursor: pointer;
+  }
+  .h-59{
+    height: 59px;
+  }

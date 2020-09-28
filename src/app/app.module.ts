@@ -12,8 +12,7 @@ import { ItemComponent } from './pages/user/productitem/item/item.component';
 import { RebealComponent } from './pages/user/productitem/rebeal/rebeal.component';
 import {FormsModule} from '@angular/forms';
 import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.component';
-import { ModalItemComponent } from './modals/navbar/user/modal/modal-item/modal-item.component';
-import { ModalBillComponent } from './modals/navbar/user/modal/modal-bill/modal-bill.component';
+import { ModalBillComponent } from './modals/navbar/user/modal/modal-money/modal-bill/modal-bill.component';
 import { ReitemComponent } from './pages/user/productitem/reitem/reitem.component';
 import { UserProfileComponent } from './pages/user/profile/user-profile/user-profile.component';
 import { AdminMonneyAllComponent } from './pages/admin/admin-monney/admin-monney-all/admin-monney-all.component';
@@ -35,6 +34,12 @@ import { ViewDownitemComponent } from './pages/user/view/view-downitem/view-down
 import { ViewCarComponent } from './pages/user/view/view-car/view-car.component';
 import { ViewDowncarComponent } from './pages/user/view/view-downcar/view-downcar.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { TabItemComponent } from './modals/navbar/user/tab/tab-item/tab-item.component';
+import { TabCarComponent } from './modals/navbar/user/tab/tab-car/tab-car.component';
+import { TabSaleComponent } from './modals/navbar/user/tab/tab-sale/tab-sale.component';
+import { TabViewComponent } from './modals/navbar/user/tab/tab-view/tab-view.component';
+import { ModalMonneyComponent } from './modals/navbar/user/modal/modal-money/modal-monney/modal-monney.component';
+
 
 
 
@@ -49,7 +54,6 @@ import { NgxPaginationModule } from 'ngx-pagination';
     ItemComponent,
     RebealComponent,
     AdminMonneyComponent,
-    ModalItemComponent,
     ModalBillComponent,
     ReitemComponent,
     UserProfileComponent,
@@ -71,6 +75,11 @@ import { NgxPaginationModule } from 'ngx-pagination';
     ViewDownitemComponent,
     ViewCarComponent,
     ViewDowncarComponent,
+    TabItemComponent,
+    TabCarComponent,
+    TabSaleComponent,
+    TabViewComponent,
+    ModalMonneyComponent,
 
   ],
   imports: [
