@@ -1,1 +1,48 @@
-<p>admin-item-all-give works!</p>
+<app-admin></app-admin>
+
+<div class="container">
+  <br />
+  <div class="tab">
+    <button [routerLink]="['/admin-item']" >เบิกของ</button>
+    <button [routerLink]="['/admin-item-get']" >คืนของ</button>
+    <button [routerLink]="['/admin-item-all-give']" class="button-click">รายการทั้งหมด</button>
+    <br />
+    <hr />
+  </div>
+  <br />
+  <div class="content">
+  <h5 class="topic">รายการเบิกของพนักงานทั้งหมด</h5>
+
+  <div class="example" action="/action_page.php">
+    <input type="text" placeholder="Search.." >
+    <button  type="submit"> ค้นหา </button>
+  </div>
+  <br /> <br />
+  <div class="responsive">
+    <table>
+      <tr>
+        <th>รหัส</th>
+        <th>ชื่อ-สกุล</th>
+        <th>วันที่เบิก</th>
+        <th>จำนวน</th>
+        <th>รายละเอียด</th>
+        <th>สถานะ</th>
+        <th>อนุมัติโดย</th>
+      </tr>
+      <tr *ngFor="let item of collection.data | paginate: config">
+        <td>{{item.id}}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <pagination-controls (pageChange)="pageChanged($event)" style="float: right;" class="pagination-show">
+    </pagination-controls>
+    
+  </div>
+</div>
+</div>

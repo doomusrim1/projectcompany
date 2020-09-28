@@ -1,1 +1,43 @@
-<p>admin-item-get works!</p>
+<app-admin></app-admin>
+
+<div class="container">
+  <br />
+  <div class="tab">
+    <button [routerLink]="['/admin-item']" >เบิกของ</button>
+    <button [routerLink]="['/admin-item-get']" class="button-click">คืนของ</button>
+    <button [routerLink]="['/admin-item-all-give']">รายการทั้งหมด</button>
+    <br />
+    <hr />
+  </div>
+
+  <br />
+  <div class="content">
+  <h5 class="topic">รายการคืนของ</h5>
+
+  <div class="responsive">
+    <table>
+      <tr>
+        <th>รหัส</th>
+        <th>ชื่อ-สกุล</th>
+        <th>วันที่คืน</th>
+        <th>จำนวน/ชิ้น</th>
+        <th>รายละเอียด</th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let item of collection.data | paginate: config">
+        <td>{{item.id}}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>   
+      </tr>
+    </table>
+    
+    <pagination-controls (pageChange)="pageChanged($event)" style="float: right;" class="pagination-show">
+    </pagination-controls>
+
+  </div>
+</div>
+
+</div>

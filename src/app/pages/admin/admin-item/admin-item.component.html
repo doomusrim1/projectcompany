@@ -3,57 +3,31 @@
 <div class="container">
   <br />
   <div class="tab">
-    <button [routerLink]="['/admin-money']" class="button-click">เบิกของ</button>
-    <button [routerLink]="['/admin-money']" class="button">คืนของ</button>
-    <button [routerLink]="['/admin-money']">รายการทั้งหมด</button>
+    <button [routerLink]="['/admin-item']" class="button-click">เบิกของ</button>
+    <button [routerLink]="['/admin-item-get']" >คืนของ</button>
+    <button [routerLink]="['/admin-item-all-give']">รายการทั้งหมด</button>
+    <br />
+    <hr />
   </div>
 
-  <h2 class="topic">รายการเบิกเงิน</h2>
+  <br />
+  <div class="content">
+  <h5 class="topic">รายการเบิกของ</h5>
 
-  <div class="table-item responsive">
+  <div class="responsive">
     <table>
       <tr>
         <th>รหัส</th>
         <th>ชื่อ-สกุล</th>
         <th>วันที่เบิก</th>
-        <th>จำนวน</th>
+        <th>จำนวน/ชิ้น</th>
         <th>รายละเอียด</th>
         <th>สถานะ</th>
         <th></th>
         <th></th>
       </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
+      <tr *ngFor="let item of collection.data | paginate: config">
+        <td>{{item.id}}</td>
         <td></td>
         <td></td>
         <td></td>
@@ -63,17 +37,11 @@
         <td></td>
       </tr>
     </table>
-    <br />
-    <br />
-    <br />
-    <div class="pagination" style="float: right">
-      <a href="#">&laquo;</a>
-      <a class="active" href="#">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">&raquo;</a>
-    </div>
+    
+    <pagination-controls (pageChange)="pageChanged($event)" style="float: right;" class="pagination-show">
+    </pagination-controls>
+
   </div>
+</div>
 
 </div>

@@ -3,17 +3,22 @@
 <div class="container">
   <br />
   <div class="tab">
-    <button [routerLink]="['/admin-money']"
-    >เบิกเงิน</button>
-
+    <button [routerLink]="['/admin-money']">เบิกเงิน</button>
     <button [routerLink]="['/admin-money-all']"
-    class="button-click"
-    >รายการเบิกเงิน</button>
+    class="button-click">รายการเบิกเงิน</button>
+    <br />
+    <hr />
   </div>
-  
-  <h2 class="topic">รายการเบิกเงินพนักงานทั้งหมด</h2>
+  <br />
+  <div class="content">
+  <h5 class="topic">รายการเบิกเงินพนักงานทั้งหมด</h5>
 
-  <div class="TableMonney responsive">
+  <div class="example" action="/action_page.php">
+    <input type="text" placeholder="Search.." >
+    <button  type="submit"> ค้นหา </button>
+  </div>
+  <br /> <br />
+  <div class="responsive">
     <table>
       <tr>
         <th>รหัส</th>
@@ -21,42 +26,12 @@
         <th>วันที่เบิก</th>
         <th>จำนวน</th>
         <th>รายละเอียด</th>
-        <th>สถานะ</th>
-        <th></th>
-        <th></th>
+        <th>สถานะบิล</th>
+        <th>สถานะการอนุมัติ</th>
+        <th>อนุมัติโดย</th>
       </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
+      <tr *ngFor="let item of collection.data | paginate: config">
+        <td>{{item.id}}</td>
         <td></td>
         <td></td>
         <td></td>
@@ -66,16 +41,10 @@
         <td></td>
       </tr>
     </table>
-    <br />
-    <br />
-    <br />
-    <div class="pagination" style="float: right">
-      <a href="#">&laquo;</a>
-      <a class="active" href="#">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">&raquo;</a>
-    </div>
+
+    <pagination-controls (pageChange)="pageChanged($event)" style="float: right;" class="pagination-show">
+    </pagination-controls>
+    
   </div>
+</div>
 </div>

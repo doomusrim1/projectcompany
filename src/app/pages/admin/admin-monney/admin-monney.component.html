@@ -4,9 +4,7 @@
   <br />
   <div class="tab">
     <button [routerLink]="['/admin-money']"
-    class="button-click"
-    >เบิกเงิน</button>
-
+    class="button-click">เบิกเงิน</button>
     <button [routerLink]="['/admin-money-all']">รายการเบิกเงิน</button>
     <br />
     <hr />
@@ -14,9 +12,9 @@
 
   <br />
   <div class="content">
-  <h3 >รายการเบิกเงินพนักงาน</h3>
+  <h5 class="topic">รายการเบิกเงินพนักงาน</h5>
 
-  <div class="TableMonney responsive">
+  <div class="responsive">
     <table>
       <tr>
         <th>รหัส</th>
@@ -37,12 +35,8 @@
         <td></td>
         <td></td>
         <td></td>
-      </tr>
-      
+      </tr> 
     </table>
-    <br />
-    <br />
-    <br />
 
     <pagination-controls (pageChange)="pageChanged($event)" style="float: right;" class="pagination-show">
     </pagination-controls>

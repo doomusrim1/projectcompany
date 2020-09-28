@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminCarComponent } from './pages/admin/admin-car/admin-car.component';
 import { AdminHumanComponent } from './pages/admin/admin-human/admin-human.component';
+import { AdminItemAllGiveComponent } from './pages/admin/admin-item/admin-item-all-give/admin-item-all-give.component';
+import { AdminItemGetComponent } from './pages/admin/admin-item/admin-item-get/admin-item-get.component';
 import { AdminItemComponent } from './pages/admin/admin-item/admin-item.component';
 import { AdminMonneyAllComponent } from './pages/admin/admin-monney/admin-monney-all/admin-monney-all.component';
 import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.component';
@@ -44,6 +46,8 @@ const routes: Routes = [
   {path: 'admin-money',component: AdminMonneyComponent},
   {path: 'admin-money-all',component: AdminMonneyAllComponent},
   {path: 'admin-item',component: AdminItemComponent},
+  {path: 'admin-item-get',component: AdminItemGetComponent},
+  {path: 'admin-item-all-give',component: AdminItemAllGiveComponent},
   {path: 'admin-car',component: AdminCarComponent},
   {path: 'admin-human',component: AdminHumanComponent},
   {path: 'admin-store',component: AdminStoreComponent},
