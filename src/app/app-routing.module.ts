@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminCarComponent } from './pages/admin/admin-car/admin-car.component';
 import { AdminHumanComponent } from './pages/admin/admin-human/admin-human.component';
+import { AdminItemAllGetComponent } from './pages/admin/admin-item/admin-item-all-get/admin-item-all-get.component';
 import { AdminItemAllGiveComponent } from './pages/admin/admin-item/admin-item-all-give/admin-item-all-give.component';
 import { AdminItemGetComponent } from './pages/admin/admin-item/admin-item-get/admin-item-get.component';
 import { AdminItemComponent } from './pages/admin/admin-item/admin-item.component';
@@ -48,6 +49,7 @@ const routes: Routes = [
   {path: 'admin-item',component: AdminItemComponent},
   {path: 'admin-item-get',component: AdminItemGetComponent},
   {path: 'admin-item-all-give',component: AdminItemAllGiveComponent},
+  {path: 'admin-item-all-get',component: AdminItemAllGetComponent},
   {path: 'admin-car',component: AdminCarComponent},
   {path: 'admin-human',component: AdminHumanComponent},
   {path: 'admin-store',component: AdminStoreComponent},
