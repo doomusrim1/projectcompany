@@ -38,20 +38,19 @@
     display: inline-block;
   }
 
-  .example {
+  .sheachber {
     float: right;
-    
   }
-  .example input[type=text] {
-    padding: 10px;
+  .sheachber input[type=text] {
+    padding: 6px 5px;
     font-size: 17px;
     border: 1px solid grey;
     float: left;
     background: #f1f1f1;
   }
-  .example button {
+  .sheachber button {
     float: left;
-    padding: 10px;
+    padding: 6px 10px;
     background: #DD5F0A;
     color: white;
     font-size: 17px;
@@ -62,7 +61,7 @@
   table {
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 50px;
+    margin: 20px 0px;
   }
   
   th, td {

@@ -42,6 +42,7 @@ import { ModalMonneyComponent } from './modals/navbar/user/modal/modal-money/mod
 import { ModalItemComponent } from './modals/navbar/user/modal/modal-item/modal-item/modal-item.component';
 import { ModalDownitemComponent } from './modals/navbar/user/modal/modal-item/modal-downitem/modal-downitem.component';
 import { ModalDataitemComponent } from './modals/navbar/user/modal/modal-item/modal-dataitem/modal-dataitem.component';
+import { AdminItemAllGetComponent } from './pages/admin/admin-item/admin-item-all-get/admin-item-all-get.component';
 
 
 
@@ -86,6 +87,7 @@ import { ModalDataitemComponent } from './modals/navbar/user/modal/modal-item/mo
     ModalItemComponent,
     ModalDownitemComponent,
     ModalDataitemComponent,
+    AdminItemAllGetComponent,
 
   ],
   imports: [
