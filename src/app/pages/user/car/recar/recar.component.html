@@ -1,6 +1,9 @@
 <app-user></app-user>
 <div class="container">
 
+ <app-modal-downcar></app-modal-downcar>
+ <app-modal-datacar></app-modal-datacar>
+
   <div class="tab-menu tabmenu-padding-bottom">
     <app-tab-car></app-tab-car>
   </div>
@@ -14,7 +17,7 @@
   </div>
     <div class="  row pd-30" >
       <div class="col ox-a">
-        <div class="font-20"> {{name}} รหัสพนักงาน {{code}}</div>
+        <div class="font-16"> {{name}} รหัสพนักงาน {{code}}</div>
         <table class="table ">
             <thead>
               <tr>
@@ -34,8 +37,8 @@
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
-                <td><button class="btn button-data">ดูข้อมูล</button></td>
-                <td><button class="btn button-data">คืนรถ</button></td>
+                <td><button class="btn button-data" data-toggle="modal" data-target="#datacar">ดูข้อมูล</button></td>
+                <td><button class="btn button-data" data-toggle="modal" data-target="#downcar">คืนรถ</button></td>
               </tr>
         
             </tbody>

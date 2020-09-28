@@ -1,10 +1,10 @@
-<app-user>
-</app-user>
-
+<app-user></app-user>
+<app-modal-dataitem></app-modal-dataitem>
 
 <div class="container">
 
   <app-modal-item></app-modal-item>
+
 
   <div class="tab-menu tabmenu-padding-bottom" >
        <app-tab-item > </app-tab-item>
@@ -14,14 +14,14 @@
  <div class="row mt-50 tabmenu-padding-top">
     <div class="col">
       <span class="font-25">รายการเบิกของ</span>
-      <button type="button" class="btn colors-white  button-item" >
+      <button type="button" class="btn colors-white  button-item" data-toggle="modal" data-target="#item">
       คำร้องขอเบิกเงิน
     </button>
     </div>
  </div>
   <div class="  row pd-30" >
     <div class="col ox-a">
-      <div class="font-20"> {{name}} รหัสพนักงาน {{code}}</div>
+      <div class="font-16"> {{name}} รหัสพนักงาน {{code}}</div>
       <table class="table ">
           <thead>
             <tr>
@@ -41,7 +41,7 @@
               <td>-</td>
               <td>-</td>
               <td>-</td>
-              <td><button class="btn button-data">ข้อมูล</button></td>
+              <td><button class="btn button-data" data-toggle="modal" data-target="#dataitem">ข้อมูล</button></td>
               <td><button class="btn button-close">ยกเลิก</button></td>
             </tr>
       

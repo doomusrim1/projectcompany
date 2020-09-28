@@ -42,6 +42,11 @@ import { ModalMonneyComponent } from './modals/navbar/user/modal/modal-money/mod
 import { ModalItemComponent } from './modals/navbar/user/modal/modal-item/modal-item/modal-item.component';
 import { ModalDownitemComponent } from './modals/navbar/user/modal/modal-item/modal-downitem/modal-downitem.component';
 import { ModalDataitemComponent } from './modals/navbar/user/modal/modal-item/modal-dataitem/modal-dataitem.component';
+import { ModalCarComponent } from './modals/navbar/user/modal/car/modal-car/modal-car.component';
+import { ModalDowncarComponent } from './modals/navbar/user/modal/car/modal-downcar/modal-downcar.component';
+import { ModalDatacarComponent } from './modals/navbar/user/modal/car/modal-datacar/modal-datacar.component';
+import { ModalRoundComponent } from './modals/navbar/user/modal/sale/modal-round/modal-round.component';
+import { ModalCostComponent } from './modals/navbar/user/modal/sale/modal-cost/modal-cost.component';
 
 
 
@@ -86,6 +91,11 @@ import { ModalDataitemComponent } from './modals/navbar/user/modal/modal-item/mo
     ModalItemComponent,
     ModalDownitemComponent,
     ModalDataitemComponent,
+    ModalCarComponent,
+    ModalDowncarComponent,
+    ModalDatacarComponent,
+    ModalRoundComponent,
+    ModalCostComponent,
 
   ],
   imports: [

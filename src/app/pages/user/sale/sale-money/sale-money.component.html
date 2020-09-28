@@ -1,6 +1,8 @@
 <app-user></app-user>
 <div class="container">
 
+  <app-modal-round></app-modal-round>
+
   <div class="tab-menu tabmenu-padding-bottom">
     <app-tab-sale></app-tab-sale>
   </div>
@@ -8,8 +10,8 @@
   <div class="tab-menu">
     <div class="row mt-50 tabmenu-padding-top"> 
     <div class="col">
-       <span class="font-25">บันทึกรอบค่าใช้จ่าย</span>
-      <button type="button" class="btn colors-white  button-item" >
+       <span class="font-25" data-toggle="modal" >บันทึกรอบค่าใช้จ่าย</span>
+      <button type="button" class="btn colors-white  button-item" data-toggle="modal" data-target="#round">
         สร้างรอบ
       </button>
     </div>
@@ -17,7 +19,7 @@
 
   <div class="  row pd-30">
    <div class="col ox-a">
-    <div class="font-20"> {{name}} รหัสพนักงาน {{code}}</div>
+    <div class="font-16"> {{name}} รหัสพนักงาน {{code}}</div>
       <table class="table ">
           <thead>
             <tr >
@@ -35,7 +37,7 @@
               <td>สมใจมีสุข</td>
               <td>-</td>
               <td>19/02/2563</td>
-              <td><button [routerLink]="['/sale/sale-addmoney']" class="btn button-data">บันทึก</button></td>
+              <td><button [routerLink]="['/sale/sale-addmoney']" class="btn button-data" >บันทึก</button></td>
 
             </tr>
       
