@@ -1,6 +1,8 @@
 <app-user></app-user>
 <div class="container">
 
+  <app-modal-cost></app-modal-cost>
+
   <div class="tab-menu tabmenu-padding-bottom">
     <app-tab-sale></app-tab-sale>
   </div>
@@ -10,7 +12,7 @@
     <div class="row mt-50 tabmenu-padding-top"> 
     <div class="col">   
       <span class="font-25">บันทึกค่าใช้จ่าย</span>
-      <button type="button" class="btn colors-white  button-item" >
+      <button type="button" class="btn colors-white  button-item" data-toggle="modal" data-target="#cost">
      บันทึกค่าใช้จ่าย
     </button>
     </div>
@@ -18,7 +20,7 @@
 
   <div class="  row pd-30">
     <div class=" col  ox-a">
-    <div class="font-20">  รอบ {{round}}  {{name}} รหัสพนักงาน {{code}}</div>
+    <div class="font-16">  รอบ {{round}}  {{name}} รหัสพนักงาน {{code}}</div>
       <table class="table ">
           <thead>
             <tr>
