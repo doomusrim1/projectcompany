@@ -2,34 +2,26 @@
 
 <div class="container ">
 
+<app-modal-editprofile></app-modal-editprofile>
+<app-modal-password>   </app-modal-password>
+
 <div class="card mt-5"  >
     <div class="card-header headder-color" ><h1>โปรไฟล์</h1></div>
     <div class="card-body" style="text-align: center;">
     <h3><img src="/assets/img/kittisak.jpg" width="150px" height="150px" style="max-width: 100%"></h3>
     </div>
-    <div class="row" style="padding-left: 30px">
-      <div class="col-6"  style="text-align: right;">
-        <p>ชื่อ-สกุล :</p>
-        <p>รหัาพนักงาน :</p>
-        <p>เบอร์โทรศัพท์ :</p>
-        <p>วันเกิด :</p>
-        <p>ที่อยู่ :</p>
+    <div class="form-group row profile" style="padding-left: 30px;">
+      <label  class="col-sm-6 col-form-label" style="text-align: right;">ชื่อ-สกุล</label>
+      <div class="col-sm-6 " style="padding-top: 8px;">
+          <p  >kittisak</p>
       </div>
-      <div class="col-6"  >
-        <p>-</p>
-        <p>-</p>
-        <p>-</p>
-        <p>-</p>
-        <p>ssssssssssssddddd</p>
-      </div>
-      
-    </div>
+   </div>
     
     <div class="card-footer " style="width: 100%;text-align: center;">
         <button class="btn btn-outline-success" data-toggle="modal"
-        data-target="#exampleModalCenterd">แก้ไข</button>    
+        data-target="#editprfile">แก้ไข</button>    
         <button class="btn btn-outline-danger" style="margin-left: 10px;" data-toggle="modal"
-        data-target="#exampleModalCenterb">เปลี่ยนรหัสผ่าน</button>    
+        data-target="#editpassword">เปลี่ยนรหัสผ่าน</button>    
     </div>
   </div>
 

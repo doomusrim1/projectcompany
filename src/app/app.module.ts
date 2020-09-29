@@ -48,6 +48,8 @@ import { ModalDatacarComponent } from './modals/navbar/user/modal/car/modal-data
 import { ModalRoundComponent } from './modals/navbar/user/modal/sale/modal-round/modal-round.component';
 import { ModalCostComponent } from './modals/navbar/user/modal/sale/modal-cost/modal-cost.component';
 import { AdminItemAllGetComponent } from './pages/admin/admin-item/admin-item-all-get/admin-item-all-get.component';
+import { ModalPasswordComponent } from './modals/navbar/user/modal/profile/modal-password/modal-password.component';
+import { ModalEditprofileComponent } from './modals/navbar/user/modal/profile/modal-editprofile/modal-editprofile.component';
 
 
 
@@ -98,6 +100,8 @@ import { AdminItemAllGetComponent } from './pages/admin/admin-item/admin-item-al
     ModalRoundComponent,
     ModalCostComponent,
     AdminItemAllGetComponent,
+    ModalPasswordComponent,
+    ModalEditprofileComponent,
 
   ],
   imports: [
