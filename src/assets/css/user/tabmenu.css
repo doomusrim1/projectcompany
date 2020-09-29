@@ -37,7 +37,9 @@
 .p-30 {
   padding: 30px;
 }
-
+.mt-20{
+  margin-top: 20px;
+}
 ul .item-border {
   border-bottom: 2px solid #DD752F;
   transition:  all .5s ease 0s;
