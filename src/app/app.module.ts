@@ -47,6 +47,8 @@ import { ModalDowncarComponent } from './modals/navbar/user/modal/car/modal-down
 import { ModalDatacarComponent } from './modals/navbar/user/modal/car/modal-datacar/modal-datacar.component';
 import { ModalRoundComponent } from './modals/navbar/user/modal/sale/modal-round/modal-round.component';
 import { ModalCostComponent } from './modals/navbar/user/modal/sale/modal-cost/modal-cost.component';
+import { ModalPasswordComponent } from './modals/navbar/user/modal/profile/modal-password/modal-password.component';
+import { ModalEditprofileComponent } from './modals/navbar/user/modal/profile/modal-editprofile/modal-editprofile.component';
 
 
 
@@ -96,6 +98,8 @@ import { ModalCostComponent } from './modals/navbar/user/modal/sale/modal-cost/m
     ModalDatacarComponent,
     ModalRoundComponent,
     ModalCostComponent,
+    ModalPasswordComponent,
+    ModalEditprofileComponent,
 
   ],
   imports: [
