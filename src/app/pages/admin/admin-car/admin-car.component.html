@@ -1,1 +1,52 @@
 <app-admin></app-admin>
+
+<div class="container">
+  <br />
+  <div class="tab">
+    <button [routerLink]="['/admin-car']" class="button-click">ยืมรถ</button>
+    <button [routerLink]="['/admin-car-get']" >คืนรถ</button>
+    <div class="dropdown">
+      <button >รายการทั้งหมด</button>
+      <div class="dropdown-content">
+        <a [routerLink]="['/admin-car-all-give']">ยืมรถทั้งหมด</a>
+        <a [routerLink]="['/admin-car-all-get']">คืนรถทั้งหมด</a>
+      </div>
+    </div>
+    <button [routerLink]="['/admin-car-all-name']" >รายชื่อรถทั้งหมด</button>
+    <hr />
+  </div>
+  
+  <br />
+  <div class="content">
+  <h5 class="topic">รายการยืมรถ</h5>
+ 
+  <div class="responsive">
+    <table>
+      <tr>
+        <th>รหัส</th>
+        <th>ชื่อ-สกุล</th>
+        <th>วันที่/เวลายืม</th>
+        <th>ยี้ห้อ</th>
+        <th>ป้ายทะเบียน</th>
+        <th>เลขตัวถัง</th>
+        <th>วัตถุประสงค์</th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let item of collection.data | paginate: config">
+        <td>{{item.id}}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <pagination-controls (pageChange)="pageChanged($event)" style="float: right;" class="pagination-show">
+    </pagination-controls>
+    
+  </div>
+</div>
+</div>
