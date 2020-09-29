@@ -23,6 +23,12 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+.ox-a{
+  overflow-x:auto;
+}
+.box-0{
+  box-shadow: 0px 0px 0px;
+}
 
 .pt-10 {
   padding-top: 10px;
@@ -41,13 +47,6 @@ ul .item-border {
   padding: 30px;
 }
 
-.button-item {
-  width: 200px;
-  float: right;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.59);
-}
-
 .modal-dark {
   background-color: rgba(0, 0, 0, 0.59);
   color: white;
@@ -55,4 +54,12 @@ ul .item-border {
 
 .text-center{
     text-align: center;
+}
+
+a:hover {
+  color: black;
+}
+
+.pd-10{
+  padding: 10px;
 }
