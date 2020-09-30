@@ -50,6 +50,7 @@ import { ModalCostComponent } from './modals/navbar/user/modal/sale/modal-cost/m
 import { AdminItemAllGetComponent } from './pages/admin/admin-item/admin-item-all-get/admin-item-all-get.component';
 import { ModalPasswordComponent } from './modals/navbar/user/modal/profile/modal-password/modal-password.component';
 import { ModalEditprofileComponent } from './modals/navbar/user/modal/profile/modal-editprofile/modal-editprofile.component';
+import { MenuBerItemComponent } from './modals/navbar/admin/menu-ber/menu-ber-item/menu-ber-item.component';
 
 
 
@@ -102,6 +103,7 @@ import { ModalEditprofileComponent } from './modals/navbar/user/modal/profile/mo
     AdminItemAllGetComponent,
     ModalPasswordComponent,
     ModalEditprofileComponent,
+    MenuBerItemComponent,
 
   ],
   imports: [

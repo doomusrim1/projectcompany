@@ -1,27 +1,8 @@
-.tab {
-    background-color: #ffffff;
-    height: 52px ;
-    border-radius: 5px;
-    padding: 2px 20px;
-  }
-  
-  .tab button {
-    background-color: #ffffff;
-    color: black;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 3px 20px;
-    margin: 0px 2px;
-    transition: 0.3s;
-    font-size: 20px;
-  }
-  .tab button:hover {
-    background-color: #DD5F0A;
-  }
-  .tab .button-click {
-    background-color: #ffffff;
-    border-bottom: 2px solid #DD5F0A;
-    padding: 3px 20px;
-  }
+
+.tab-ber {
+  background-color: white;
+  border-bottom: 2px solid #DD5F0A;
+}
+.coler-ber {
+  color: black; 
+}
