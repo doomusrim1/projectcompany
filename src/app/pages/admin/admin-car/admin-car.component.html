@@ -2,20 +2,9 @@
 
 <div class="container">
   <br />
-  <div class="tab">
-    <button [routerLink]="['/admin-car']" class="button-click">ยืมรถ</button>
-    <button [routerLink]="['/admin-car-get']" >คืนรถ</button>
-    <div class="dropdown">
-      <button >รายการทั้งหมด</button>
-      <div class="dropdown-content">
-        <a [routerLink]="['/admin-car-all-give']">ยืมรถทั้งหมด</a>
-        <a [routerLink]="['/admin-car-all-get']">คืนรถทั้งหมด</a>
-      </div>
-    </div>
-    <button [routerLink]="['/admin-car-all-name']" >รายชื่อรถทั้งหมด</button>
-    <hr />
+  <div class="body-tab">
+    <app-menu-ber-car></app-menu-ber-car>
   </div>
-  
   <br />
   <div class="content">
   <h5 class="topic">รายการยืมรถ</h5>
