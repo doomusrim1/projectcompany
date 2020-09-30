@@ -1,32 +1,9 @@
-
-.tab {
-    background-color: #ffffff;
-    height: 52px ;
-    border-radius: 5px;
-    padding: 2px 20px;
-  }
-  
-  .tab button {
-    background-color: #ffffff;
-    color: black;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 3px 20px;
-    margin: 0px 2px;
-    transition: 0.3s;
-    font-size: 20px;
-  }
-  .tab button:hover {
-    background-color: #DD5F0A;
-  }
-  .tab .button-click {
-    background-color: #ffffff;
-    border-bottom: 2px solid #DD5F0A;
-    padding: 3px 20px;
-  }
-
+.body-tab {
+  background-color: white;
+  height: 120px ;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
   .dropdown {
     position: relative;
     display: inline;
@@ -61,23 +38,24 @@
   .topic {
       font-family: Prompt;
       font-style: normal;
-      font-size: 35px;
+      font-size: 25px;
       display: inline-block;
     }
   
     .sheachber {
       float: right;
+      margin: 15px 0px;
     }
     .sheachber input[type=text] {
       padding: 6px 5px;
       font-size: 17px;
-      border: 1px solid #707070;
+      border: 1px solid #cccccc;
       float: left;
       background: white;
       border-radius: 5px 0px 0px 5px;
     }
     .sheachber button {
-      float: left;
+      margin: auto;
       padding: 6px 10px;
       background: #DD5F0A;
       color: white;
@@ -87,19 +65,23 @@
       border-radius: 0px 5px 5px 0px;
     }
     
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin: 20px 0px;
+    .topic {
+      font-family: Prompt;
+      font-style: normal;
+      font-size: 25px;
+      display: inline-block;
     }
-    
+    table {
+      border: 1px solid #e6e6e6;
+      width: 100%;
+      margin: 20px 0px;  
+    }
     th, td {
       text-align: left;
-      padding: 20px;
+      padding: 15px;
       background-color: white;
-      border-bottom: 2px solid #bdbdbd;
+      border-bottom: 1px solid #e6e6e6;
     }
-  
     th {
       background-color: #535353;
       color: white;
