@@ -1,0 +1,20 @@
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item" routerLinkActive="tab-ber">
+      <a class="nav-link coler-ber" [routerLink]="['/admin-item']"   >เบิกของ</a>
+    </li>
+    <li class="nav-item" routerLinkActive="tab-ber">
+      <a class="nav-link coler-ber" [routerLink]="['/admin-item-get']"   >คืนของ</a>
+    </li>
+    <li class="nav-item" routerLinkActive="tab-ber">
+      <div class="dropdown">
+        <a class="nav-link coler-ber">รายการทั้งหมด</a>
+        <div class="dropdown-content">
+          <a [routerLink]="['/admin-item-all-give']">เบิก/ยืมของทั้งหมด</a>
+          <a [routerLink]="['/admin-item-all-get']">คืนของทั้งหมด</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  

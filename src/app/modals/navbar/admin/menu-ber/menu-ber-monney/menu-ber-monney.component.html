@@ -1,8 +1,9 @@
-<br />
-<div class="tab">
-  <button [routerLink]="['/admin-money']"class="button-click" >เบิกเงิน</button>
-  <button [routerLink]="['/admin-money-all']">รายการเบิกเงิน</button>
-  <br />
-  <hr />
-</div>
-<br />
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item" routerLinkActive="tab-ber">
+      <a class="nav-link coler-ber" [routerLink]="['/admin-money']">เบิกเงิน</a>
+    </li>
+    <li class="nav-item" routerLinkActive="tab-ber">
+      <a class="nav-link coler-ber" [routerLink]="['/admin-money-all']">รายการทั้งหมด</a>
+    </li>
+  </ul>

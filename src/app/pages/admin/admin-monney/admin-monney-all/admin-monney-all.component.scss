@@ -1,30 +1,8 @@
-
-.tab {
-  background-color: #ffffff;
-  height: 110px ;
+.body-tab {
+  background-color: white;
+  height: 120px ;
   border-radius: 5px;
   padding: 10px 20px;
-}
-
-.tab button {
-  background-color: #ffffff;
-  color: black;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 3px 20px;
-  margin: 0px 2px;
-  transition: 0.3s;
-  font-size: 20px;
-}
-.tab button:hover {
-  background-color: #DD5F0A;
-}
-.tab .button-click {
-  background-color: #ffffff;
-  border-bottom: 2px solid #DD5F0A;
-  padding: 3px 20px;
 }
 .content {
   background-color: #ffffff;
@@ -34,12 +12,13 @@
 .topic {
     font-family: Prompt;
     font-style: normal;
-    font-size: 35px;
+    font-size: 25px;
     display: inline-block;
   }
 
   .sheachber {
     float: right;
+    margin: 15px 0px;
   }
   .sheachber input[type=text] {
     padding: 6px 5px;
