@@ -51,6 +51,11 @@ import { AdminItemAllGetComponent } from './pages/admin/admin-item/admin-item-al
 import { ModalPasswordComponent } from './modals/navbar/user/modal/profile/modal-password/modal-password.component';
 import { ModalEditprofileComponent } from './modals/navbar/user/modal/profile/modal-editprofile/modal-editprofile.component';
 import { MenuBerItemComponent } from './modals/navbar/admin/menu-ber/menu-ber-item/menu-ber-item.component';
+import { MenuBerCarComponent } from './modals/navbar/admin/menu-ber/menu-ber-car/menu-ber-car.component';
+import { AdminCarGetComponent } from './pages/admin/admin-car/admin-car-get/admin-car-get.component';
+import { AdminCarGiveAllComponent } from './pages/admin/admin-car/admin-car-give-all/admin-car-give-all.component';
+import { AdminCarGetAllComponent } from './pages/admin/admin-car/admin-car-get-all/admin-car-get-all.component';
+import { AdminCarNameAllComponent } from './pages/admin/admin-car/admin-car-name-all/admin-car-name-all.component';
 
 
 
@@ -104,6 +109,11 @@ import { MenuBerItemComponent } from './modals/navbar/admin/menu-ber/menu-ber-it
     ModalPasswordComponent,
     ModalEditprofileComponent,
     MenuBerItemComponent,
+    MenuBerCarComponent,
+    AdminCarGetComponent,
+    AdminCarGiveAllComponent,
+    AdminCarGetAllComponent,
+    AdminCarNameAllComponent,
 
   ],
   imports: [

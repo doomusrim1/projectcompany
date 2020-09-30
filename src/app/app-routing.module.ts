@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AdminCarGetAllComponent } from './pages/admin/admin-car/admin-car-get-all/admin-car-get-all.component';
+import { AdminCarGetComponent } from './pages/admin/admin-car/admin-car-get/admin-car-get.component';
+import { AdminCarGiveAllComponent } from './pages/admin/admin-car/admin-car-give-all/admin-car-give-all.component';
+import { AdminCarNameAllComponent } from './pages/admin/admin-car/admin-car-name-all/admin-car-name-all.component';
 import { AdminCarComponent } from './pages/admin/admin-car/admin-car.component';
 import { AdminHumanComponent } from './pages/admin/admin-human/admin-human.component';
 import { AdminItemAllGetComponent } from './pages/admin/admin-item/admin-item-all-get/admin-item-all-get.component';
@@ -51,6 +55,10 @@ const routes: Routes = [
   {path: 'admin-item-all-give',component: AdminItemAllGiveComponent},
   {path: 'admin-item-all-get',component: AdminItemAllGetComponent},
   {path: 'admin-car',component: AdminCarComponent},
+  {path: 'admin-car-get',component: AdminCarGetComponent},
+  {path: 'admin-car-give-all',component: AdminCarGiveAllComponent},
+  {path: 'admin-car-get-all',component: AdminCarGetAllComponent},
+  {path: 'admin-car-name-all',component: AdminCarNameAllComponent},
   {path: 'admin-human',component: AdminHumanComponent},
   {path: 'admin-store',component: AdminStoreComponent},
   {path: 'admin-sell',component: AdminSellComponent},
