@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/data.service';
+import { Employee } from 'src/app/models/Employee.modal';
 
 @Component({
   selector: 'app-money',
@@ -6,35 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./money.component.scss']
 })
 export class MoneyComponent implements OnInit {
+  employee:Employee[];
   code:string = "54451445";
   name:string = "สมใจ มีสุข";
   config: any;
-  collection = { count: 25, data: [] };
-  constructor() {
-
-    //Create dummy data
-    for (var i = 0; i < this.collection.count; i++) {
-      this.collection.data.push(
-        {
-          id: i + 1,
-          value: "items number " + (i + 1)
-        }
-      );
-    }
-
+  constructor(private dataService:DataService) {
     this.config = {
       itemsPerPage: 5,
       currentPage: 1,
-      totalItems: this.collection.count
     };
   }
-
   pageChanged(event){
     this.config.currentPage = event;
   }
-
-
-  ngOnInit(): void {
+  ngOnInit() {
+    return this.dataService.getMonney()
+    .subscribe(data => this.employee = data);
   }
+
 
 }

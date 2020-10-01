@@ -56,7 +56,8 @@ import { AdminCarGetComponent } from './pages/admin/admin-car/admin-car-get/admi
 import { AdminCarGiveAllComponent } from './pages/admin/admin-car/admin-car-give-all/admin-car-give-all.component';
 import { AdminCarGetAllComponent } from './pages/admin/admin-car/admin-car-get-all/admin-car-get-all.component';
 import { AdminCarNameAllComponent } from './pages/admin/admin-car/admin-car-name-all/admin-car-name-all.component';
-
+import { DataService } from './data.service';
+import { HttpClientModule } from '@angular/common/http'
 
 
 
@@ -121,9 +122,10 @@ import { AdminCarNameAllComponent } from './pages/admin/admin-car/admin-car-name
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
