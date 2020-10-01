@@ -1,1 +1,45 @@
-<p>admin-car-name-all works!</p>
+<app-admin></app-admin>
+
+<div class="container">
+  <br />
+  <div class="body-tab">
+    <app-menu-ber-car></app-menu-ber-car>
+    <div class="sheachber" action="/action_page.php">
+      <input type="text" placeholder="Search.." >
+      <button  type="submit"> 
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+  <br />
+  <div class="content">
+  <h5 class="topic">รายชื่อรถทั้งหมด</h5>
+ 
+  <div class="responsive">
+    <table>
+      <tr>
+        <th>ยี้ห้อ</th>
+        <th>รุ่นรถ</th>
+        <th>ป้ายทะเบียน</th>
+        <th>เลขตัวถัง</th>
+        <th>สถานะ</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let item of collection.data | paginate: config">
+        <td>Honda</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <pagination-controls (pageChange)="pageChanged($event)" style="float: right;" class="pagination-show">
+    </pagination-controls>
+    
+  </div>
+</div>
+</div>

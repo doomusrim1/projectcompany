@@ -5,29 +5,6 @@
   padding: 10px 20px;
 }
 
-  .dropdown {
-    position: relative;
-    display: inline;
-  } 
-  .dropdown-content {
-    margin: 35px 219px;
-    display: none;
-    position: absolute;
-    background-color: #585858;
-    min-width: 166px;
-    box-shadow: 0px 8px 16px 0px#585858;
-  } 
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown-content a:hover {background-color: #DD752F}
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
   .content {
     background-color: #ffffff;
     border-radius: 5px;
@@ -62,13 +39,7 @@
       cursor: pointer;
       border-radius: 0px 5px 5px 0px;
     }
-    
-    .topic {
-      font-family: Prompt;
-      font-style: normal;
-      font-size: 25px;
-      display: inline-block;
-    }
+
     table {
       border: 1px solid #e6e6e6;
       width: 100%;

@@ -1,1 +1,43 @@
-<p>admin-car-get works!</p>
+<app-admin></app-admin>
+
+<div class="container">
+  <br />
+  <div class="body-tab">
+    <app-menu-ber-car></app-menu-ber-car>
+  </div>
+  <br />
+  <div class="content">
+  <h5 class="topic">รายการคืนรถรออนุมัติ</h5>
+ 
+  <div class="responsive">
+    <table>
+      <tr>
+        <th>รหัส</th>
+        <th>ชื่อ-สกุล</th>
+        <th>วันที่/เวลาคืน</th>
+        <th>ยี้ห้อ</th>
+        <th>ป้ายทะเบียน</th>
+        <th>เลขตัวถัง</th>
+        <th>วัตถุประสงค์</th>
+        <th>เลขไมล์ออก</th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let item of collection.data | paginate: config">
+        <td>{{item.id}}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <pagination-controls (pageChange)="pageChanged($event)" style="float: right;" class="pagination-show">
+    </pagination-controls>
+    
+  </div>
+</div>
+</div>

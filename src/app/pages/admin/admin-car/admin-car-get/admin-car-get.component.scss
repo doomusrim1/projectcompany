@@ -1,0 +1,31 @@
+.body-tab {
+    background-color: white;
+    height: 63px ;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  .content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px 20px;
+  }
+  .topic {
+      font-family: Prompt;
+      font-style: normal;
+      font-size: 25px;
+    }
+    table {
+      border: 1px solid #e6e6e6;
+      width: 100%;
+      margin: 20px 0px;  
+    }
+    th, td {
+      text-align: left;
+      padding: 15px;
+      background-color: white;
+      border-bottom: 1px solid #e6e6e6;
+    }
+    th {
+      background-color: #535353;
+      color: white;
+    }
