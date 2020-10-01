@@ -12,10 +12,11 @@
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
   }
   .button-item {
-    width: 150px;
+    width: auto;
     float: right;
-    height: 40px;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.59);
+    max-width: 100%;
   }
   button{
     box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
@@ -46,6 +47,7 @@
   }
   table {
     box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+    text-align: center;
   }
   .btn-darka{
     background-color:rgba(#060606,0.59);

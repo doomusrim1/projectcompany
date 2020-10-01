@@ -14,7 +14,7 @@
     <div class="col">
       <span class="font-25">รายการคืนของ</span>
       <button type="button" class="btn button-item colors-white" data-toggle="modal" data-target="#downitem" >
-        คำร้องขอคืนของ
+        <span style="color:#DD752F;">+</span> คำร้องขอคืนของ
       </button>
     </div>
   </div>
@@ -34,9 +34,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let item of collection.data | paginate: config">
-              <td>{{item.id}}</td>
-              <td>{{item.value}}</td>
+            <tr >
+              <td></td>
+              <td></td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -46,7 +46,6 @@
       
           </tbody>
         </table>
-        <pagination-controls (pageChange)="pageChanged($event)" class="pagination-form"></pagination-controls>
         </div>
       </div>
     </div>

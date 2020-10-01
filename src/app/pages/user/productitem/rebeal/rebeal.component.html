@@ -33,9 +33,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let item of collection.data | paginate: config">
-              <td>{{item.id}}</td>
-              <td>{{item.value}}</td>
+            <tr >
+              <td></td>
+              <td></td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -44,7 +44,6 @@
       
           </tbody>
         </table>
-        <pagination-controls (pageChange)="pageChanged($event)" class="pagination-form"></pagination-controls>
       </div>
       </div>
       </div>
