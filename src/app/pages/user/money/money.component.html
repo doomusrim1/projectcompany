@@ -5,7 +5,7 @@
   <app-modal-bill></app-modal-bill>
   <app-modal-monney></app-modal-monney>
 
-  <div class="tab-menu tabmenu-padding-bottom">
+  <div class="tab-menu tabmenu-padding-bottom w3-animate-top">
     <ul class="nav nav-tabs mt-20 pt-10">
       <li class="nav-item item-border">
         <a [routerLink]="['/user/money']" class="nav-link colors-black  ">เบิกเงิน</a>
@@ -13,7 +13,7 @@
     </ul>
   </div>
 
-  <div class="tab-menu">
+  <div class="tab-menu w3-animate-zoom" >
     <div class="row mt-50 tabmenu-padding-top">
       <div class="col">
         <span class="font-25">รายการเบิกเงิน</span>
@@ -46,7 +46,12 @@
               <td><a style="cursor: pointer;" data-toggle="modal" data-target="#myModala">{{employees.mN_Bill}}</a></td>
               <td>{{employees.mN_Status}}</td>
               <td>{{employees.mN_date}}</td>
-              <td><button class="btn button-close">ยกเลิก</button></td>
+              <td>
+                <button *ngIf="employees.mN_Status === 'approve' || employees.mN_Status === 'Waitingforapproval'" class="btn button-close">ยกเลิก</button>
+                <span class="btn button-orange btn-file" *ngIf="employees.mN_Status === 'Disapproval'">
+                  เพิ่มบิล<input type="file">
+              </span>
+              </td>
             </tr>
 
           </tbody>
