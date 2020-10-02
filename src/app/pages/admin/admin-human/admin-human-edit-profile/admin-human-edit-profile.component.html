@@ -3,7 +3,7 @@
 <div class="container">
   <br />
   <div class="body-tab">
-    <app-menu-ber-store></app-menu-ber-store>
+    <app-menu-ber-human></app-menu-ber-human>
     <div class="sheachber" action="/action_page.php">
       <input type="text" placeholder="Search.." >
       <button  type="submit"> 
@@ -13,28 +13,20 @@
   </div>
   <br />
   <div class="content">
-  <h5 class="topic">คลังอุปกรณ์สำนักงาน</h5>
+  <h5 class="topic">ประวัติแก้ไขโปรไฟล์</h5>
 
   <div class="responsive">
     <table>
       <tr>
         <th>รหัส</th>
-        <th>เลขซีเรียล</th>
-        <th>ชื่ออุปกรณ์</th>
-        <th>หมวดหมู่</th>
-        <th>วันที่อัปเดต</th>
-        <th>จำนวนทั้งหมด</th>
-        <th>จำนวนเบิก</th>
-        <th>คงเหลือ</th>
-        <th></th>
-        <th></th>
+        <th>ชื่อ-สกุล</th>
+        <th>วันเกิด</th>
+        <th>เบอร์โทร</th>
+        <th>ที่อยู่</th>
+        <th>วันที่แก้ไข</th>
       </tr>
       <tr *ngFor="let item of collection.data | paginate: config">
         <td>{{item.id}}</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
