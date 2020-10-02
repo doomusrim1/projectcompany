@@ -5,6 +5,7 @@ import { AdminCarGetComponent } from './pages/admin/admin-car/admin-car-get/admi
 import { AdminCarGiveAllComponent } from './pages/admin/admin-car/admin-car-give-all/admin-car-give-all.component';
 import { AdminCarNameAllComponent } from './pages/admin/admin-car/admin-car-name-all/admin-car-name-all.component';
 import { AdminCarComponent } from './pages/admin/admin-car/admin-car.component';
+import { AdminHumanEditProfileComponent } from './pages/admin/admin-human/admin-human-edit-profile/admin-human-edit-profile.component';
 import { AdminHumanComponent } from './pages/admin/admin-human/admin-human.component';
 import { AdminItemAllGetComponent } from './pages/admin/admin-item/admin-item-all-get/admin-item-all-get.component';
 import { AdminItemAllGiveComponent } from './pages/admin/admin-item/admin-item-all-give/admin-item-all-give.component';
@@ -12,7 +13,9 @@ import { AdminItemGetComponent } from './pages/admin/admin-item/admin-item-get/a
 import { AdminItemComponent } from './pages/admin/admin-item/admin-item.component';
 import { AdminMonneyAllComponent } from './pages/admin/admin-monney/admin-monney-all/admin-monney-all.component';
 import { AdminMonneyComponent } from './pages/admin/admin-monney/admin-monney.component';
+import { AdminSellAllComponent } from './pages/admin/admin-sell/admin-sell-all/admin-sell-all.component';
 import { AdminSellComponent } from './pages/admin/admin-sell/admin-sell.component';
+import { AdminStorePriceComponent } from './pages/admin/admin-store/admin-store-price/admin-store-price.component';
 import { AdminStoreComponent } from './pages/admin/admin-store/admin-store.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RecarComponent } from './pages/user/car/recar/recar.component';
@@ -60,8 +63,11 @@ const routes: Routes = [
   {path: 'admin-car-get-all',component: AdminCarGetAllComponent},
   {path: 'admin-car-name-all',component: AdminCarNameAllComponent},
   {path: 'admin-human',component: AdminHumanComponent},
+  {path: 'admin-human-edit-profile',component: AdminHumanEditProfileComponent},
   {path: 'admin-store',component: AdminStoreComponent},
+  {path: 'admin-store-price',component: AdminStorePriceComponent},
   {path: 'admin-sell',component: AdminSellComponent},
+  {path: 'admin-sell-all',component: AdminSellAllComponent},
 ];
 
 @NgModule({

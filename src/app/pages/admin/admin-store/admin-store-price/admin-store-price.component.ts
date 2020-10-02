@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-admin-sell',
-  templateUrl: './admin-sell.component.html',
-  styleUrls: ['./admin-sell.component.scss']
+  selector: 'app-admin-store-price',
+  templateUrl: './admin-store-price.component.html',
+  styleUrls: ['./admin-store-price.component.scss']
 })
-export class AdminSellComponent implements OnInit {
+export class AdminStorePriceComponent implements OnInit {
 
   config: any;
   collection = { count: 25, data: [] };

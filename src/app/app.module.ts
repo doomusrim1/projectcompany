@@ -56,6 +56,12 @@ import { AdminCarGetComponent } from './pages/admin/admin-car/admin-car-get/admi
 import { AdminCarGiveAllComponent } from './pages/admin/admin-car/admin-car-give-all/admin-car-give-all.component';
 import { AdminCarGetAllComponent } from './pages/admin/admin-car/admin-car-get-all/admin-car-get-all.component';
 import { AdminCarNameAllComponent } from './pages/admin/admin-car/admin-car-name-all/admin-car-name-all.component';
+import { AdminHumanEditProfileComponent } from './pages/admin/admin-human/admin-human-edit-profile/admin-human-edit-profile.component';
+import { MenuBerHumanComponent } from './modals/navbar/admin/menu-ber/menu-ber-human/menu-ber-human.component';
+import { AdminStorePriceComponent } from './pages/admin/admin-store/admin-store-price/admin-store-price.component';
+import { MenuBerStoreComponent } from './modals/navbar/admin/menu-ber/menu-ber-store/menu-ber-store.component';
+import { AdminSellAllComponent } from './pages/admin/admin-sell/admin-sell-all/admin-sell-all.component';
+import { MenuBerSellComponent } from './modals/navbar/admin/menu-ber/menu-ber-sell/menu-ber-sell.component';
 
 
 
@@ -114,6 +120,12 @@ import { AdminCarNameAllComponent } from './pages/admin/admin-car/admin-car-name
     AdminCarGiveAllComponent,
     AdminCarGetAllComponent,
     AdminCarNameAllComponent,
+    AdminHumanEditProfileComponent,
+    MenuBerHumanComponent,
+    AdminStorePriceComponent,
+    MenuBerStoreComponent,
+    AdminSellAllComponent,
+    MenuBerSellComponent,
 
   ],
   imports: [
