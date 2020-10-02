@@ -5,7 +5,7 @@
   <app-modal-bill></app-modal-bill>
   <app-modal-monney></app-modal-monney>
 
-  <div class="tab-menu tabmenu-padding-bottom w3-animate-top">
+  <div class="tab-menu tabmenu-padding-bottom">
     <ul class="nav nav-tabs mt-20 pt-10">
       <li class="nav-item item-border">
         <a [routerLink]="['/user/money']" class="nav-link colors-black  ">เบิกเงิน</a>
@@ -18,7 +18,7 @@
       <div class="col">
         <span class="font-25">รายการเบิกเงิน</span>
         <button type="button" class="btn colors-white  button-item" data-toggle="modal" data-target="#myModal">
-          <span style="color:#DD752F;">+</span> เบิกเงิน
+          <span style="color:#DD752F">+</span> <span class="colors-white">เบิกเงิน</span>
         </button>
       </div>
     </div>
@@ -47,8 +47,8 @@
               <td>{{employees.mN_Status}}</td>
               <td>{{employees.mN_date}}</td>
               <td>
-                <button *ngIf="employees.mN_Status === 'approve' || employees.mN_Status === 'Waitingforapproval'" class="btn button-close">ยกเลิก</button>
-                <span class="btn button-orange btn-file" *ngIf="employees.mN_Status === 'Disapproval'">
+                <button *ngIf=" employees.mN_Status === 'Waitingforapproval'" class="btn button-close">ยกเลิก</button>
+                <span class="btn button-orange btn-file" *ngIf="employees.mN_Status === 'approve'">
                   เพิ่มบิล<input type="file">
               </span>
               </td>
@@ -56,7 +56,7 @@
 
           </tbody>
         </table>
-        <pagination-controls (pageChange)="pageChanged($event)" class="pagination-form"></pagination-controls>
+        <pagination-controls (pageChange)="pageChanged($event)" class="pagination-form "></pagination-controls>
       </div>
     </div>
   </div>

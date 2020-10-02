@@ -3,14 +3,14 @@
     <span><img src="/assets/img/head.png"></span>
     <span   style="cursor: pointer;color:white;">ล็อคอิน</span>
 </nav>
-  <div class="container center" style="max-width: 100%;" >
+  <div class="container center w3-animate-zoom" style="max-width: 100%;" >
     <div class="form-group" style="background-color:  white;border-radius: 10px;box-shadow: 0px 1px 3px rgba(0,0,0,0.3);" >  
       <div style="background-color: rgba(0,0,0,0.59);padding:30px;font-size: 30px;color:white;border-top-left-radius: 10px;border-top-right-radius: 10px;" >ล็อคอิน</div>
         <label class="mt-4">ชื่อผู้ใช้งาน</label>
         <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username" >
         <label class="mt-4">รหัสผ่าน</label>
         <input type="text" class="form-control" id="password" name="password" [(ngModel)]="password">
-        <button class="btn  mt-5 mb-3" style="background-color: #DD752F;color:white;" (click)="onclickPage()">เข้าสู่ระบบ</button>
+        <button class="btn  mt-5 mb-3 btn-1"  (click)="onclickPage()">เข้าสู่ระบบ</button>
       </div>
     </div>
 
