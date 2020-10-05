@@ -64,6 +64,7 @@ import { AdminStorePriceComponent } from './pages/admin/admin-store/admin-store-
 import { MenuBerStoreComponent } from './modals/navbar/admin/menu-ber/menu-ber-store/menu-ber-store.component';
 import { AdminSellAllComponent } from './pages/admin/admin-sell/admin-sell-all/admin-sell-all.component';
 import { MenuBerSellComponent } from './modals/navbar/admin/menu-ber/menu-ber-sell/menu-ber-sell.component';
+import { ModalAddcarComponent } from './modals/navbar/admin/modal/modal-car/modal-addcar/modal-addcar.component';
 
 
 
@@ -128,6 +129,7 @@ import { MenuBerSellComponent } from './modals/navbar/admin/menu-ber/menu-ber-se
     MenuBerStoreComponent,
     AdminSellAllComponent,
     MenuBerSellComponent,
+    ModalAddcarComponent,
 
   ],
   imports: [
