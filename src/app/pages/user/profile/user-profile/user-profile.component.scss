@@ -14,3 +14,19 @@ img{
     height: 150px;
     max-width: 100%;
 }
+@media only screen and (max-width:575px){
+    .col-form-p-right{
+        text-align: center;
+    }
+    .col-form-p-left{
+        text-align: center;
+    }
+}
+@media only screen and (min-width:576px){
+    .col-form-p-right{
+        text-align: right;
+    }
+    .col-form-p-left{
+        text-align: left;
+    }
+    }
