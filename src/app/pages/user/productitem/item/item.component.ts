@@ -9,6 +9,7 @@ import { StockItem } from 'src/app/models/StockItem.modal';
 })
 export class ItemComponent implements OnInit {
   stockitem:StockItem[];
+  sI_Id: number;
   getClass(){
     return "link"
   }
@@ -20,6 +21,7 @@ export class ItemComponent implements OnInit {
       itemsPerPage: 5,
       currentPage: 1,
     };
+
   }
   pageChanged(event){
     this.config.currentPage = event;
@@ -28,6 +30,9 @@ export class ItemComponent implements OnInit {
   ngOnInit() {
     return this.dataService.getStockitem()
     .subscribe(data => this.stockitem = data);
+  }
+  getForm(stockitems) : void{
+  console.log(stockitems);
   }
 
 }

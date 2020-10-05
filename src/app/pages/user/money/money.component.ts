@@ -26,5 +26,4 @@ export class MoneyComponent implements OnInit {
     .subscribe(data => this.employee = data);
   }
 
-
 }

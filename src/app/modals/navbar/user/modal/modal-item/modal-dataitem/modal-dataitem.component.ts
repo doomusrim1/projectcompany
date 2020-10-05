@@ -16,6 +16,9 @@ export class ModalDataitemComponent implements OnInit {
   ngOnInit() {
     return this.dataService.getStockitem()
     .subscribe(data => this.stockitem = data);
+
+
   }
+ 
 
 }
