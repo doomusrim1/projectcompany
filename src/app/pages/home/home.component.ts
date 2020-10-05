@@ -1,5 +1,7 @@
 import { Component,  OnInit,  } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from 'src/app/data.service';
+import { Register } from 'src/app/models/Register.modal';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +9,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+Registers:Register[];
   username:string;
   password:number;
 
 
-  constructor(public router:Router) {
+  constructor(public router:Router,private dataService:DataService) {
     
     
    }
@@ -30,7 +32,9 @@ export class HomeComponent implements OnInit {
     alert('ไม่สำเร็จ');
   }
 }
-  ngOnInit(): void {
+  ngOnInit() {
+    return this.dataService.getRegister()
+    .subscribe(data => this.Registers = data);
   }
 
   
