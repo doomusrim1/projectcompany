@@ -34,18 +34,19 @@
             </tr>
           </thead>
           <tbody>
-            <tr >
-              <td></td>
-              <td></td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
+            <tr *ngFor='let Stockitems of stockitem | paginate: config'>
+              <td>{{Stockitems.sI_Id}}</td>
+              <td>{{Stockitems.sI_List}}</td>
+              <td>{{Stockitems.sI_Name}}</td>
+              <td>{{Stockitems.sI_Piece}}</td>
+              <td>{{Stockitems.sI_date}}</td>
               <td><button class="btn button-data" data-toggle="modal" data-target="#dataitem">ข้อมูล</button></td>
               <td><button class="btn button-close">ยกเลิก</button></td>
             </tr>
       
           </tbody>
         </table>
+        <pagination-controls (pageChange)="pageChanged($event)" class="pagination-form "></pagination-controls>
         </div>
       </div>
     </div>

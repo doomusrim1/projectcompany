@@ -33,17 +33,18 @@
             </tr>
           </thead>
           <tbody>
-            <tr >
-              <td></td>
-              <td></td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
+            <tr *ngFor='let Stockitems of stockitem | paginate: config'>
+              <td>{{Stockitems.sI_Id}}</td>
+              <td>{{Stockitems.sI_List}}</td>
+              <td>{{Stockitems.sI_Name}}</td>
+              <td>{{Stockitems.sI_Piece}}</td>
+              <td>{{Stockitems.sI_Unit}}</td>
+              <td>{{Stockitems.sI_CostMoney}} </td>
             </tr>
       
           </tbody>
         </table>
+        <pagination-controls (pageChange)="pageChanged($event)" class="pagination-form "></pagination-controls>
       </div>
       </div>
       </div>

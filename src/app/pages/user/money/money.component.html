@@ -47,8 +47,8 @@
               <td>{{employees.mN_Status}}</td>
               <td>{{employees.mN_date}}</td>
               <td>
-                <button *ngIf=" employees.mN_Status === 'Waitingforapproval'" class="btn button-close">ยกเลิก</button>
-                <span class="btn button-orange btn-file" *ngIf="employees.mN_Status === 'approve'">
+                <button *ngIf=" employees.mN_Status === 'รออนุมัติ'" class="btn button-close">ยกเลิก</button>
+                <span class="btn button-orange btn-file" *ngIf="employees.mN_Status === 'อนุมัติ'">
                   เพิ่มบิล<input type="file">
               </span>
               </td>

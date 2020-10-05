@@ -14,16 +14,16 @@
                 <img src="/assets/img/item.jpg" width="300px" height="250px"  style="max-width: 100%;"> 
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="thumbnail">
-                <h5>รหัสพนักงาน   <span>:</span>  <span class="ml-3">-</span></h5>
-                <h5>ชื่อ-สกุล      <span>:</span>  <span class="ml-3">-</span></h5>
-                <h5>วันที่เบิก      <span>:</span>  <span class="ml-3">-</span></h5>
-                <h5>ประเภท      <span>:</span>   <span class="ml-3">-</span></h5>
-                <h5>ชื่อ          <span>:</span>  <span class="ml-3">-</span></h5>
-                <h5>จำนวนชิ้น     <span>:</span>  <span class="ml-3">-</span></h5>
-                <h5>ราคา/หน่วย   <span>:</span>  <span class="ml-3">-</span></h5>
-                <h5>จำนวนเงิน    <span>:</span>  <span class="ml-3">-</span></h5>
+            <div class="col-md-6" *ngFor='let Stockitems of stockitem ; index as i'>
+                <div class="thumbnail" >
+                <h5>รหัสพนักงาน   <span>:</span>  <span class="ml-3">{{name}}</span></h5>
+                <h5>ชื่อ-สกุล      <span>:</span>  <span class="ml-3">{{code}}</span></h5>
+                <h5>วันที่เบิก      <span>:</span>  <span class="ml-3">{{Stockitems.sI_date}}</span></h5>
+                <h5>ประเภท      <span>:</span>   <span class="ml-3">{{Stockitems.sI_List}}</span></h5>
+                <h5>ชื่อ          <span>:</span>  <span class="ml-3">{{Stockitems.sI_Name}}</span></h5>
+                <h5>จำนวนชิ้น     <span>:</span>  <span class="ml-3">{{Stockitems.sI_Piece}}</span></h5>
+                <h5>ราคา/หน่วย   <span>:</span>  <span class="ml-3">{{Stockitems.sI_Unit}}</span></h5>
+                <h5>จำนวนเงิน    <span>:</span>  <span class="ml-3">{{Stockitems.sI_CostMoney}}</span></h5>
             </div>
             </div>
             </div>
