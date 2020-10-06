@@ -7,23 +7,35 @@
           <button type="button"  class="close box-0" data-dismiss="modal" >&times;</button>
         </div>
   
-        <div class="modal-body">
-          <div class="form-group">
-            <label for="name">ชื่อ</label>
+        <form action="">
+        <div class="modal-body ">
+          <div class="form-group pt-10 row">
+            <label class="col-sm-3 text-center" for="name">ชื่อ</label>
+            <div class="col-sm-9">
             <input type="name" class="form-control" id="name" aria-describedby="name">
           </div>
-          <div class="form-group">
-            <label for="item">ประเภท</label>
+          </div>
+          <div class="form-group row">
+            <label  class="col-sm-3 text-center" for="item">ประเภท</label>
+            <div class="col-sm-9">
             <input type="item" class="form-control" id="item">
           </div>
-          <div class="form-group">
-            <label for="number">จำนวน</label>
-            <input type="number" class="form-control" id="number">
           </div>
+          <div class="form-group row">
+            <label  class="col-sm-3 text-center" for="unit">จำนวน</label>
+            <div class="col-sm-9">
+            <input type="unit" class="form-control" id="unit">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm text-center pd-10">
+          <button  type="button" class="btn button-orange " data-dismiss="modal">ตกลง</button>
         </div>
+        </div>
+        </div>
+      </form>
         
         <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-dismiss="modal">ตกลง</button>
           <button type="button" class="btn btn-danger" data-dismiss="modal">ปิด</button>
         </div>
         
