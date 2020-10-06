@@ -1,5 +1,18 @@
 .profile{
-    text-align: center;
+    text-align: right;
     padding-right: 20px;
     padding-top: 5px;
+}
+@media only screen and(max-width:575px){
+    .profile{
+        text-align: left;
+    }
+}
+img{
+    width:150px; 
+    height:150px; 
+    padding: 10px;
+}
+input[type=file]{
+    width: 220px;
 }
