@@ -1,3 +1,25 @@
+.headder-color {
+  background-color: rgba(#060606, 0.59);
+  color: white;
+}
+
+.card-header {
+  height: 100px;
+  text-align: center;
+  padding: 30px 0px;
+  border: 0;
+}
+.card-center {
+  width: 100%;
+  text-align: center;
+}
+.card {
+  width: 600px;
+  float: none;
+  margin: 0 auto;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
 .button-orange:hover {
   color: white;
 }
@@ -48,7 +70,7 @@ table {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 .button-orange {
-  background-color: #DD752F;
+  background-color: rgb(45, 187, 40);
   color: white;
   height: auto;
   width: auto;
@@ -236,6 +258,26 @@ table {
   }
 }
 
+.icon-upload{
+  &::before{
+    content: "\f093";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-family: FontAwesome;
+    font-size: 16px;
+  }
+}
+.icon-close{
+  &::before{
+    content: "\f00d";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-family: FontAwesome;
+    font-size: 16px;
+  }
+}
  
 .btn-center{
   margin: 0 auto;

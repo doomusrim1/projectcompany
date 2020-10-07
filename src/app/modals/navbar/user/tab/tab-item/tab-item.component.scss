@@ -1,5 +1,5 @@
 @media only screen and(max-width:319px){
-li{
+li {
     margin: 0 auto;
 }
 .item-border{
@@ -12,5 +12,8 @@ li{
     .item-border{
         width: 100%;
         text-align: center;
+    }
+    li{
+        margin: 0 auto;
     }
     }

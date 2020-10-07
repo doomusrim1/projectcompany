@@ -16,3 +16,9 @@ img{
 input[type=file]{
     width: 220px;
 }
+@media only screen and(max-width:189px){
+    .button-orange{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
