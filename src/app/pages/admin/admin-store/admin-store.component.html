@@ -4,6 +4,80 @@
   <br />
   <div class="body-tab">
     <app-menu-ber-store></app-menu-ber-store>
+    <button type="button" class="bt add-item" data-toggle="modal" data-target="#addItem">+เพิ่มอุปกรณ์</button>
+
+    <div class="modal fade" id="addItem" role="dialog">
+      <div class="modal-dialog modal-lg">
+      
+        <div class="modal-content bg-gay">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+            <h5 class="center topic">เพิ่มอุปกรณ์</h5>
+            <form class="form-horizontal form-addcar">
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="brand ">ชื่ออุปกรณ์</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="brand " placeholder="เพิ่มชื่ออุปกรณ์" name="brand ">
+                </div>
+              </div>
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="version">หมวดหมู่</label>
+                <div class="col-sm-10">          
+                  <input type="button" class="form-control" id="version" placeholder="เพิ่มหมวดหมู่" name="version">
+                </div>
+              </div>
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="registration">รหัส</label>
+                <div class="col-sm-10">          
+                  <input type="text" class="form-control" id="registration" placeholder="เพิ่มรหัสอุปกรณ์" name="registration">
+                </div>
+              </div>
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="vinNumber">เลขซีเรียล</label>
+                <div class="col-sm-10">          
+                  <input type="text" class="form-control" id="vinNumber" placeholder="เพิ่มเลขซีเรียล" name="vinNumber">
+                </div>
+              </div>
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="vinNumber">วันที่อัปเดต</label>
+                <div class="col-sm-10">          
+                  <input type="date" class="form-control" id="vinNumber" placeholder="เพิ่มวันที่" name="vinNumber">
+                </div>
+              </div>
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="vinNumber">จำนวน</label>
+                <div class="col-sm-10">          
+                  <input type="text" class="form-control" id="vinNumber" placeholder="เพิ่มจำนวนทั้งหมด" name="vinNumber">
+                </div>
+              </div>
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="vinNumber">ราคาต่อชิ้น</label>
+                <div class="col-sm-10">          
+                  <input type="text" class="form-control" id="vinNumber" placeholder="เพิ่มราคาต่อชิ้น" name="vinNumber">
+                </div>
+              </div>
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="imeg">รูปภาพ</label>
+                <div class="col-sm-10">          
+                  <input type="file" accept="image/*" class="form-control" id="imeg" name="imeg">
+                  <label class="f-white lab-addcar">เลือกขนาดไฟล์ภาพไม่เกิน 125kb</label>
+                  <label for="imeg" class="lb-uplode f-white bg-oreng">เลือกไฟล์</label>
+                </div>
+              </div>
+              <div class="form-group row btn-addcar">        
+                <div class="col-sm-offset-2 col-sm-5">
+                  <button type="submit" class="btn bg-oreng f-white">บันทึก</button>
+                </div>
+                <div class="col-sm-offset-2 col-sm-1">
+                  <button type="reset" class="btn bg-red f-white">ลบ</button>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
     <div class="sheachber" action="/action_page.php">
       <input type="text" placeholder="Search.." >
       <button  type="submit"> 

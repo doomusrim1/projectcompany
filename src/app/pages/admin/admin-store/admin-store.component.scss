@@ -4,6 +4,70 @@
     border-radius: 5px;
     padding: 10px 20px;
   }
+  .bt {
+    margin: 10px 4px;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .add-item {
+    background-color:#dd5f0a;
+    color: white;
+  }
+  .add-item:hover {
+    background-color:#535353;
+    color: white;
+  }
+  
+  .bg-gay {
+    background-color:#dddddd;
+    }
+  .bg-oreng {
+  background-color:#dd5f0a;
+  }
+  .bg-red {
+    background-color:#AE1313;
+    }
+  .f-white {
+    color: white;
+  }
+  .form-addcar {
+    padding: 40px 170px;
+  }
+  .inp-addcar {
+    padding: 0px 0px;
+  }
+  .lab-addcar {
+    padding: 8px 0px;
+  }
+  .btn-addcar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  .center {
+    text-align: center;
+  }
+  input[type="file"]{
+    display: inline;
+  }
+  .lb-uplode {
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 4px 0px;
+    float: right;
+    margin: 4px 0px;
+  }
+  ::-webkit-file-upload-button {
+    background-color:white;
+    border: 0px solid white;
+    color:#808080;
+  }
   .content {
     background-color: #ffffff;
     border-radius: 5px;
