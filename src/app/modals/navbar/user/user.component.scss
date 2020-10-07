@@ -18,3 +18,9 @@ a{
   .h-59{
     height: 59px;
   }
+ @media only screen and(max-width:300px){
+   .menubar{
+     transform: all 5s;
+     width: 230px;
+   }
+ }

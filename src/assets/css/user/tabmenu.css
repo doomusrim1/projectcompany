@@ -33,7 +33,9 @@
 .pt-10 {
   padding-top: 10px;
 }
-
+.ml-10{
+  margin-left: 10px;
+}
 .p-30 {
   padding: 30px;
 }
@@ -57,8 +59,12 @@ ul .item-border {
 .text-center{
     text-align: center;
 }
-
-
+.pr-10{
+  padding-right: 10px;
+}
+.mr-10{
+  margin-right: 10px;
+}
 .pd-10{
   padding: 10px;
 }

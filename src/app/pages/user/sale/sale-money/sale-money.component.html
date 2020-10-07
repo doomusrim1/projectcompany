@@ -6,7 +6,7 @@
   <div class="tab-menu tabmenu-padding-bottom">
     <app-tab-sale></app-tab-sale>
   </div>
- 
+
   <div class="tab-menu">
     <div class="row mt-50 tabmenu-padding-top"> 
     <div class="col">   
@@ -14,16 +14,24 @@
       <button type="button" class="btn colors-white  button-item" data-toggle="modal" data-target="#round">
      <span style="color:#DD752F;">+</span> บันทึกรอบ
     </button>
-    </div>
-    
-  </div>
+    <div class="row mt-50 tabmenu-padding-top">
+      <div class="col">
+        <span class="font-25">บันทึกค่าใช้จ่าย</span>
+        <button type="button" class="btn colors-white button-item-1 button-item" data-toggle="modal"
+          data-target="#round">
+          <i class="icon-items pd-10"></i>
+          <span class=" pr-10"> บันทึกรอบ</span>
+        </button>
+      </div>
 
-  <div class="  row pd-30">
-   <div class="col ox-a">
-    <div class="font-16 " > {{name}} รหัสพนักงาน {{code}}</div>
-      <table class="table ">
+    </div>
+
+    <div class="  row pd-30">
+      <div class="col ox-a">
+        <div class="font-16 "> {{name}} รหัสพนักงาน {{code}}</div>
+        <table class="table ">
           <thead>
-            <tr >
+            <tr>
               <th>รอบรายการ</th>
               <th>จำนวนเงิน</th>
               <th>วันที่เริ่มเบิก</th>
@@ -38,13 +46,18 @@
               <td>สมใจมีสุข</td>
               <td>-</td>
               <td>19/02/2563</td>
-              <td><button [routerLink]="['/sale/sale-addmoney']" class="btn button-data" >บันทึก</button></td>
+              <td>
+                <button [routerLink]="['/sale/sale-addmoney']" class="btn button-data">
+                  <i class="pr-10"></i>
+                  <span>บันทึก</span>
+                </button>
+              </td>
 
             </tr>
-      
+
           </tbody>
         </table>
       </div>
-      </div>
-      </div>
+    </div>
+  </div>
 </div>

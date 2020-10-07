@@ -1,20 +1,83 @@
-<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
-    <a href="javascript:void(0)" (click)="onClickCloseMenu()" class="w3-bar-item color-orange w3-large h-59"
-      > <span style="float: right;">&times;</span></a>
-  
-    <a [routerLink]="['/user/money']"   routerLinkActive="{{getClass()}}"    class="w3-bar-item  ">เบิกเงิน</a>
-    <a [routerLink]="['/productitem/rebeal']" routerLinkActive="{{getClass()}}" class="w3-bar-item   ">เบิกของ/คือของ</a>
-    <a [routerLink]="['/car/user-upcar']"  routerLinkActive="{{getClass()}}" class="w3-bar-item  ">ยืมรถ/คืนรถ</a>
-    <a [routerLink]="['/sale/sale-money']"  routerLinkActive="{{getClass()}}" class="w3-bar-item  ">ฝ่ายขาย</a>
-    <a [routerLink]="['/profile/user-profile']" routerLinkActive="{{getClass()}}" class="w3-bar-item  ">โปรไฟล์</a>
-    <a [routerLink]="['/view/view-money']"     routerLinkActive="{{getClass()}}"   class="w3-bar-item  ">ประวัติทำรายการ</a>
-    <a [routerLink]="['/']"  class="w3-bar-item ">ออกจากระบบ</a>
- 
-  </div>
-  
-  
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left menubar" id="leftMenu">
+  <a href="javascript:void(0)" (click)="onClickCloseMenu()" class="w3-bar-item color-orange w3-large h-59"> <span
+      style="float: right;">&times;</span></a>
 
-  <nav class="navbar navbar-dark " >
-    <span class="navbar-toggler-icon " (click)="onClickOpenMenu()" ></span>
+  <a [routerLink]="['/user/money']" routerLinkActive="{{getClass()}}" class="w3-bar-item  ">
+    <div class="row">
+      <div class="col-2">
+        <i class="icon-monney "></i>
+      </div>
+      <div class="col-10">
+        <span>เบิกเงิน</span>
+      </div>
+    </div>
+  </a>
+  <a [routerLink]="['/productitem/rebeal']" routerLinkActive="{{getClass()}}" class="w3-bar-item   ">
+    <div class="row">
+      <div class="col-2">
+        <i class="icon-item"></i>
+      </div>
+      <div class="col-10">
+        <span>เบิกของ/คือของ</span>
+      </div>
+    </div>
+  </a>
+  <a [routerLink]="['/car/user-upcar']" routerLinkActive="{{getClass()}}" class="w3-bar-item  ">
+    <div class="row">
+      <div class="col-2">
+        <i class="icon-car "></i>
+      </div>
+      <div class="col-10">
+        <span>ยืมรถ/คืนรถ</span>
+      </div>
+    </div>
+  </a>
+  <a [routerLink]="['/sale/sale-money']" routerLinkActive="{{getClass()}}" class="w3-bar-item  ">
+    <div class="row">
+      <div class="col-2">
+        <i class="icon-sale "></i>
+      </div>
+      <div class="col-10">
+        <span>ฝ่ายขาย</span>
+      </div>
+    </div>
+  </a>
+  <a [routerLink]="['/profile/user-profile']" routerLinkActive="{{getClass()}}" class="w3-bar-item  ">
+    <div class="row">
+      <div class="col-2">
+        <i class="icon-user "></i>
+      </div>
+      <div class="col-10">
+        <span>โปรไฟล์</span>
+      </div>
+    </div>
+  </a>
+  <a [routerLink]="['/view/view-money']" routerLinkActive="{{getClass()}}" class="w3-bar-item  ">
+    <div class="row">
+      <div class="col-2">
+        <i class="icon-view "></i>
+      </div>
+      <div class="col-10">
+        <span>ประวัติทำรายการ</span>
+      </div>
+    </div>
+  </a>
+  <a [routerLink]="['/']" class="w3-bar-item ">
+    <div class="row">
+      <div class="col-2">
+        <i class="icon-logout "></i>
+      </div>
+      <div class="col-10">
+        <span>ออกจากระบบ</span>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+
+
+<nav class="navbar  ">
+  <span class="icon-menu " (click)="onClickOpenMenu()"></span>
   <span><img src="/assets/img/head.png"></span>
 </nav>
