@@ -12,3 +12,18 @@
     
   }
   
+  .icon-back{
+    transition: all 0.2s linear 0s;
+  
+    &::after{
+  content: "\f177";
+  font-family: FontAwesome;
+  transition: all 0.2s linear 0s;
+  transform-origin: left center;
+  padding-right: 10px;
+    }
+    &:after {
+      transform: scale(1,1);
+      text-indent: 0;
+    }
+  }

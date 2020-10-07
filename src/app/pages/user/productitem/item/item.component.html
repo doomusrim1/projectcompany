@@ -6,24 +6,26 @@
   <app-modal-item></app-modal-item>
 
 
-  <div class="tab-menu tabmenu-padding-bottom" >
-       <app-tab-item > </app-tab-item>
+  <div class="tab-menu tabmenu-padding-bottom">
+    <app-tab-item> </app-tab-item>
   </div>
- 
-  <div class="tab-menu">
-  <div class="row mt-50 tabmenu-padding-top">
-    <div class="col">
-      <span class="font-25">รายการเบิกของ</span>
-      <button type="button" class="btn colors-white  button-item" data-toggle="modal" data-target="#item">
-        <span style="color:#DD752F;">+</span> คำร้องขอเบิกเงิน
-    </button>
-    </div>
- </div>
 
-  <div class="  row pd-30" >
-    <div class="col ox-a">
-      <div class="font-16"> {{name}} รหัสพนักงาน {{code}}</div>
-      <table class="table ">
+  <div class="tab-menu">
+    <div class="row mt-50 tabmenu-padding-top">
+      <div class="col">
+        <span class="font-25">รายการเบิกของ</span>
+        <button type="button" class="btn colors-white button-item-1 button-item" data-toggle="modal"
+          data-target="#item">
+          <i class="icon-items pd-10"></i>
+          <span class=" pr-10"> คำร้องขอเบิกเงิน</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="  row pd-30">
+      <div class="col ox-a">
+        <div class="font-16"> {{name}} รหัสพนักงาน {{code}}</div>
+        <table class="table ">
           <thead>
             <tr>
               <th>รหัส</th>
@@ -42,16 +44,17 @@
               <td>{{Stockitems.sI_Name}}</td>
               <td>{{Stockitems.sI_Piece}}</td>
               <td>{{Stockitems.sI_date}}</td>
-              <td >
-                <button  class="btn button-data" (click)="getForm(Stockitems)" data-toggle="modal" data-target="#dataitem" >ข้อมูล</button>
+              <td>
+                <button class="btn btn-document" (click)="getForm(Stockitems)" data-toggle="modal"
+                  data-target="#dataitem"><i class="pr-10"></i>ข้อมูล</button>
               </td>
               <td><button class="btn button-close">ยกเลิก</button></td>
             </tr>
-      
+
           </tbody>
         </table>
         <pagination-controls (pageChange)="pageChanged($event)" class="pagination-form "></pagination-controls>
       </div>
-      </div>
     </div>
+  </div>
 </div>
