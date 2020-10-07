@@ -15,20 +15,21 @@
     </ul>
   </div>
 
-  <div class="tab-menu " >
+  <div class="tab-menu ">
     <div class="row mt-50 tabmenu-padding-top">
       <div class="col">
         <span class="font-25">รายการเบิกเงิน</span>
-        <button type="button" class="btn colors-white  button-item button-item-1" data-toggle="modal" data-target="#myModal">
+        <button type="button" class="btn colors-white  button-item button-item-1" data-toggle="modal"
+          data-target="#myModal">
           <i class="icon-items pd-10"></i>
-          <span class=" pr-10" >เบิกเงิน</span>
+          <span class=" pr-10">เบิกเงิน</span>
         </button>
       </div>
     </div>
 
     <div class=" row p-30">
       <div class="col ox-a">
-        <div class="font-16" > {{name}} รหัสพนักงาน {{code}}</div>
+        <div class="font-16"> {{name}} รหัสพนักงาน {{code}}</div>
         <table class="table font-16">
           <thead>
             <tr>
@@ -50,10 +51,13 @@
               <td>{{employees.mN_Status}}</td>
               <td>{{employees.mN_date}}</td>
               <td>
-                <button *ngIf=" employees.mN_Status === 'รออนุมัติ'" class="btn button-close">ยกเลิก</button>
+                <button *ngIf=" employees.mN_Status === 'รออนุมัติ'" class="btn button-close">
+                  <i class="icon-close"></i>
+                </button>
                 <span class="btn button-orange btn-file" *ngIf="employees.mN_Status === 'อนุมัติ'">
-                  เพิ่มบิล<input type="file">
-              </span>
+                  <i class="icon-upload"></i>
+                  <input type="file">
+                </span>
               </td>
             </tr>
 
@@ -64,6 +68,6 @@
     </div>
   </div>
 
-  
-  
+
+
 </div>
