@@ -14,58 +14,66 @@
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
             <h5 class="center topic">เพิ่มอุปกรณ์</h5>
-            <form class="form-horizontal form-addcar">
-              <div class="form-group row inp-addcar">
-                <label class="control-label col-sm-2 lab-addcar" for="brand ">ชื่ออุปกรณ์</label>
+            <form class="form-horizontal form-addItem">
+              <div class="form-group row inp-addItem">
+                <label class="control-label col-sm-2 lab-addItem" for="nameItem">ชื่ออุปกรณ์</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="brand " placeholder="เพิ่มชื่ออุปกรณ์" name="brand ">
+                  <input type="text" class="form-control" id="nameItem" placeholder="เพิ่มชื่ออุปกรณ์" name="nameItem">
                 </div>
               </div>
-              <div class="form-group row inp-addcar">
-                <label class="control-label col-sm-2 lab-addcar" for="version">หมวดหมู่</label>
+              <div class="form-group row inp-addItem">
+                <label class="control-label col-sm-2 lab-addItem" for="types">หมวดหมู่</label>
                 <div class="col-sm-10">          
-                  <input type="button" class="form-control" id="version" placeholder="เพิ่มหมวดหมู่" name="version">
+                  <select id="types" class="form-control">
+                    <option value="hide">เลือกหมวดหมู่</option>
+                    <option value="january" rel="icon-temperature">อุปกรณ์อิเล็กทรอนิกส์</option>
+                    <option value="february">อุปกรณ์ทำความสะอาด</option>
+                    <option value="march">ฟอนิเจอร์</option>
+                    <option value="april">เครื่องใช้ไฟฟ้า</option>
+                    <option value="may">อุปกรณ์ครัว</option>
+                    <option value="june">วัสดุสิ้นเปลือง</option>
+                </select> 
                 </div>
               </div>
-              <div class="form-group row inp-addcar">
-                <label class="control-label col-sm-2 lab-addcar" for="registration">รหัส</label>
+              <div class="form-group row inp-addItem">
+                <label class="control-label col-sm-2 lab-addItem" for="IdItem">รหัส</label>
                 <div class="col-sm-10">          
-                  <input type="text" class="form-control" id="registration" placeholder="เพิ่มรหัสอุปกรณ์" name="registration">
+                  <input type="number" class="form-control" id="IdItem" placeholder="เพิ่มรหัสอุปกรณ์" name="IdItem">
                 </div>
               </div>
-              <div class="form-group row inp-addcar">
-                <label class="control-label col-sm-2 lab-addcar" for="vinNumber">เลขซีเรียล</label>
+              <div class="form-group row inp-addItem">
+                <label class="control-label col-sm-2 lab-addItem" for="sereal">เลขซีเรียล</label>
                 <div class="col-sm-10">          
-                  <input type="text" class="form-control" id="vinNumber" placeholder="เพิ่มเลขซีเรียล" name="vinNumber">
+                  <input type="number" class="form-control" id="sereal" placeholder="เพิ่มเลขซีเรียล" name="sereal">
                 </div>
               </div>
               <div class="form-group row inp-addcar">
-                <label class="control-label col-sm-2 lab-addcar" for="vinNumber">วันที่อัปเดต</label>
+                <label class="control-label col-sm-2 lab-addItem" for="dates">วันที่อัปเดต</label>
                 <div class="col-sm-10">          
-                  <input type="date" class="form-control" id="vinNumber" placeholder="เพิ่มวันที่" name="vinNumber">
+                  <input type="date" class="form-control" id="dates" placeholder="เพิ่มวันที่" name="dates">
                 </div>
               </div>
-              <div class="form-group row inp-addcar">
-                <label class="control-label col-sm-2 lab-addcar" for="vinNumber">จำนวน</label>
+              <div class="form-group row inp-addItem">
+                <label class="control-label col-sm-2 lab-addItem" for="count">จำนวน</label>
                 <div class="col-sm-10">          
-                  <input type="text" class="form-control" id="vinNumber" placeholder="เพิ่มจำนวนทั้งหมด" name="vinNumber">
+                  <input type="number" class="form-control" id="count" placeholder="เพิ่มจำนวนทั้งหมด" name="count">
                 </div>
               </div>
-              <div class="form-group row inp-addcar">
-                <label class="control-label col-sm-2 lab-addcar" for="vinNumber">ราคาต่อชิ้น</label>
+              <div class="form-group row inp-addItem">
+                <label class="control-label col-sm-2 lab-addItem" for="pire">ราคาต่อชิ้น</label>
                 <div class="col-sm-10">          
-                  <input type="text" class="form-control" id="vinNumber" placeholder="เพิ่มราคาต่อชิ้น" name="vinNumber">
+                  <input type="number" class="form-control" id="pire" placeholder="เพิ่มราคาต่อชิ้น" name="pire">
                 </div>
               </div>
-              <div class="form-group row inp-addcar">
-                <label class="control-label col-sm-2 lab-addcar" for="imeg">รูปภาพ</label>
+              <div class="form-group row inp-addItem">
+                <label class="control-label col-sm-2 lab-addItem" for="imeg">รูปภาพ</label>
                 <div class="col-sm-10">          
                   <input type="file" accept="image/*" class="form-control" id="imeg" name="imeg">
-                  <label class="f-white lab-addcar">เลือกขนาดไฟล์ภาพไม่เกิน 125kb</label>
+                  <label class="f-white lab-addItem">เลือกขนาดไฟล์ภาพไม่เกิน 125kb</label>
                   <label for="imeg" class="lb-uplode f-white bg-oreng">เลือกไฟล์</label>
                 </div>
               </div>
-              <div class="form-group row btn-addcar">        
+              <div class="form-group row btn-addItem">        
                 <div class="col-sm-offset-2 col-sm-5">
                   <button type="submit" class="btn bg-oreng f-white">บันทึก</button>
                 </div>
