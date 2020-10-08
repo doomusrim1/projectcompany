@@ -16,7 +16,7 @@
             </div>
           </div>
           <div class="col-md-6" *ngFor='let Stockitems of stockitem ; index as i'>
-            <div class="thumbnail">
+            <div class="thumbnail" *ngIf='Stockitems.sI_Id == 1'> 
               <h5>รหัส <span>:</span> <span class="ml-3">{{Stockitems.sI_Id}}</span></h5>
               <h5>รหัสพนักงาน <span>:</span> <span class="ml-3">{{name}}</span></h5>
               <h5>ชื่อ-สกุล <span>:</span> <span class="ml-3">{{code}}</span></h5>

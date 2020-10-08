@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import bsCustomFileInput from'bs-custom-file-input'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -138,7 +138,7 @@ import { ModalAddcarComponent } from './modals/navbar/admin/modal/modal-car/moda
     NgbModule,
     FormsModule,
     NgxPaginationModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

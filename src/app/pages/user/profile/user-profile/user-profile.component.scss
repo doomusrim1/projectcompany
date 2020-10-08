@@ -1,4 +1,4 @@
-div {
+.card {
   max-width: 100%;
 }
 
@@ -29,14 +29,20 @@ img {
   }
 }
 
-@media only screen and (max-width:379px) {
+@media only screen and (max-width:767px) {
   .btn-profile {
+    position: relative;
+    display: table;
     margin-left: 0;
-  }
-}
+    margin: 0 auto;
+    width: 100px;
 
-@media only screen and (max-width:369px) {
-  .btn-profile {
+  }
+
+  .btn-media {
+    position: relative;
     margin-top: 10px;
+    width: 150px;
+    display: flex;
   }
 }

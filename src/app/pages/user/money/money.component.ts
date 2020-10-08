@@ -25,5 +25,7 @@ export class MoneyComponent implements OnInit {
     return this.dataService.getMonney()
     .subscribe(data => this.employee = data);
   }
-
+   uploadFile(target) {
+    document.getElementById("file-name").innerHTML = target.files[0].name;
+}
 }

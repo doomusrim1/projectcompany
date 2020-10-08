@@ -1,6 +1,10 @@
 @media only screen and(max-width:319px){
 li {
-    margin: 0 auto;
+    text-align: center;
+}
+.nav-tabs{
+        display: grid;
+        transform: all 5s;
 }
 .item-border{
     width: 100%;
