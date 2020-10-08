@@ -18,8 +18,8 @@
         <th>จำนวน</th>
         <th>รายละเอียด</th>
         <th>สถานะ</th>
-        <th></th>
-        <th></th>
+        <th class="td-edit"></th>
+        <th class="td-edit"></th>
       </tr>
       <tr *ngFor="let item of collection.data | paginate: config">
         <td>{{item.id}}</td>
@@ -28,15 +28,69 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
         <td>
-
+          <button type="button" class="bord bg-white edit-approve" data-toggle="modal" data-target="#edit">
+            <i class="fa fa-pencil"></i>
+          </button>
+          <div class="modal fade" id="edit" role="dialog">
+            <div class="modal-dialog modal-lg modal-dialog-centered" >
+            
+              <div class="modal-content bg-gay">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <h5 class="center topic">แก้ไขข้อมูลการเบิกเงิน</h5>
+                  <form class="form-horizontal form-edit">
+                    <div class="form-group row inp-approve">
+                      <label class="control-label col-sm-2 lab-approve" for="editName">ชื่อ-สกุล</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="editName" name="editName">
+                      </div>
+                    </div>
+                    <div class="form-group row inp-approve">
+                      <label class="control-label col-sm-2 lab-approve" for="editId">รหัส</label>
+                      <div class="col-sm-9">          
+                        <input type="text" class="form-control" id="editId" name="editId">
+                      </div>
+                    </div>
+                    <div class="form-group row inp-approve">
+                      <label class="control-label col-sm-2 lab-approve" for="editDate">วันที่</label>
+                      <div class="col-sm-9">          
+                        <input type="date" class="form-control" id="editDate" name="editDate">
+                      </div>
+                    </div>
+                    <div class="form-group row inp-approve">
+                      <label class="control-label col-sm-2 lab-approve" for="editCount">จำนวน</label>
+                      <div class="col-sm-9">          
+                        <input type="number" class="form-control" id="editCount" name="editCount">
+                      </div>
+                    </div>
+                    <div class="form-group row inp-approve">
+                      <label class="control-label col-sm-2 lab-approve" for="editDetail">รายละเอียด</label>
+                      <div class="col-sm-9">          
+                        <textarea class="form-control" rows="3" id="editDetail"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group row btn-edit">        
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn bg-oreng f-white">บันทึก</button>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="reset" class="btn bg-red f-white">ยกเลิก</button>
+                      </div>
+                    </div>
+                  </form>   
+              </div>   
+            </div>
+          </div>
+        </td>
+        <td>
           <button type="button" class="bt add-approve" data-toggle="modal" data-target="#approve">ยืนยัน</button>
 
     <div class="modal fade" id="approve" role="dialog">
       <div class="modal-dialog modal-sm modal-dialog-centered" >
       
-        <div class="modal-content bg-gay">
+        <div class="modal-content bg-white">
           <div class="modal-header">
             <h5 class="center topic">เลือกสถานะ</h5>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -44,13 +98,13 @@
             <form class="form-horizontal form-approve">
               <div class="form-group row">
                 <div class="col-sm-2">
-                  <input type="radio" class="form-control" id="approve " name="approve ">
+                  <input type="radio" checked class="form-control" id="approve " name="approve">
                 </div>
                 <label class="control-label col-sm-2 lab-approve" for="approve ">อนุมัติ</label>
               </div>
               <div class="form-group row">
                 <div class="col-sm-2">          
-                  <input type="radio" class="form-control" id="noApprove" name="noApprove">
+                  <input type="radio" class="form-control" id="noApprove" name="approve">
                 </div>
                 <label class="control-label col-sm-3 lab-approve" for="noApprove">ไม่อนุมัติ</label>
               </div>
@@ -61,20 +115,16 @@
               </div>
               <div class="form-group row btn-approve">        
                 <div class="col-sm-5">
-                  <button type="submit" class="bord bg-gay f-white">Ok</button>
+                  <button type="submit" class="bord bg-white f-blue">Ok</button>
                 </div>
                 <div class="col-sm-1">
-                  <button type="reset" class="bord bg-gay f-white">Cancel</button>
+                  <button type="reset" class="bord bg-white f-blue">Cancel</button>
                 </div>
               </div>
-            </form>
-        
-        </div>
-        
+            </form>   
+        </div>   
       </div>
     </div>
-
-
         </td>
       </tr> 
     </table>

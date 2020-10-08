@@ -4,12 +4,15 @@
   border-radius: 5px;
   padding: 10px 20px;
 }
+.edit-approve {
+  font-size: 20px;
+}
 .bt {
   float: right;
   border: none;
   border-radius: 15px;
   padding: 4px 15px;
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
 }
 .add-approve {
@@ -20,10 +23,9 @@
   background-color:#535353;
   color: white;
 }
-
 .bg-gay {
-  background-color:white;
-  }
+  background-color:#dddddd;
+}
 .bg-oreng {
   background-color:#dd5f0a;
 }
@@ -34,11 +36,17 @@
   border: 0px solid white;
   box-shadow: none;
   }
-.f-white {
+.f-blue {
   color: #2C6FE0;
+}
+.f-white {
+  color: white;
 }
 .form-approve {
   margin: 10px 15px;
+}
+.form-edit {
+  margin: 50px 70px;
 }
 .inp-approve {
   margin-left: 20px;
@@ -48,6 +56,11 @@
 }
 .btn-approve {
   float: right;
+}
+.btn-edit {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
 .center {
   text-align: center;
@@ -77,6 +90,9 @@
   th {
     background-color: #535353;
     color: white;
+  }
+  .td-edit {
+    width: 1px;
   }
   
   // .pagination {
