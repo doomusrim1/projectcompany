@@ -20,7 +20,7 @@
         <th>เลขตัวถัง</th>
         <th>วัตถุประสงค์</th>
         <th>เลขไมล์ออก</th>
-        <th></th>
+        <th class="td-edit"></th>
       </tr>
       <tr *ngFor="let item of collection.data | paginate: config">
         <td>{{item.id}}</td>
@@ -31,7 +31,30 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
+        <td>
+          <button type="button" class="bt add-approve" data-toggle="modal" data-target="#approve">ยืนยัน</button>
+
+    <div class="modal fade" id="approve" role="dialog">
+      <div class="modal-dialog modal-sm modal-dialog-centered" >
+      
+        <div class="modal-content bg-white">
+            <form class="form-horizontal form-approve">
+              <div class="form-group row">
+                <label class="control-label col-sm-12 lab-approve" for="approve ">ยืนยันการอนุมัติ</label>
+              </div>
+              <div class="form-group row btn-approve">        
+                <div class="col-sm-5">
+                  <button type="submit" class="bord bg-white f-blue">Ok</button>
+                </div>
+                <div class="col-sm-1">
+                  <button type="button" class="bord bg-white f-blue" data-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </form>   
+        </div>   
+      </div>
+    </div>
+        </td>
       </tr>
     </table>
 
