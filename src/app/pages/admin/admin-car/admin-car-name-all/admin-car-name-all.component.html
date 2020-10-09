@@ -11,7 +11,7 @@
       
         <div class="modal-content bg-gay">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close bord" data-dismiss="modal">&times;</button>
           </div>
             <h5 class="center topic">เพิ่มรถยนต์</h5>
             <form class="form-horizontal form-addcar">
@@ -89,8 +89,8 @@
         <th>ป้ายทะเบียน</th>
         <th>เลขตัวถัง</th>
         <th>สถานะ</th>
-        <th></th>
-        <th></th>
+        <th class="td-edit"></th>
+        <th class="td-edit"></th>
       </tr>
       <tr *ngFor="let item of collection.data | paginate: config">
         <td>Honda</td>
@@ -98,8 +98,76 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
-        <td></td>
+        <td>
+          <button type="button" class="bord bg-white edit-approve" data-toggle="modal" data-target="#editCar">
+            <i class="fa fa-pencil"></i>
+          </button>
+
+    <div class="modal fade" id="editCar" role="dialog">
+      <div class="modal-dialog modal-lg">
+      
+        <div class="modal-content bg-gay">
+          <div class="modal-header">
+            <button type="button" class="close bord" data-dismiss="modal">&times;</button>
+          </div>
+            <h5 class="center topic">เพิ่มรถยนต์</h5>
+            <form class="form-horizontal form-addcar">
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="brand ">ยี้ห้อ</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="brand " placeholder="เพิ่มยี้ห้อ" name="brand ">
+                </div>
+              </div>
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="version">รุ่น</label>
+                <div class="col-sm-10">          
+                  <input type="text" class="form-control" id="version" placeholder="เพิ่มรุ่น" name="version">
+                </div>
+              </div>
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="registration">ป้ายทะเบียน</label>
+                <div class="col-sm-10">          
+                  <input type="text" class="form-control" id="registration" placeholder="เพิ่มป้ายทะเบียน" name="registration">
+                </div>
+              </div>
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="vinNumber">เลขตัวถัง</label>
+                <div class="col-sm-10">          
+                  <input type="text" class="form-control" id="vinNumber" placeholder="เพิ่มเลขตัวถัง" name="vinNumber">
+                </div>
+              </div>
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="clone">สำเนาเล่มรถ</label>
+                <div class="col-sm-10">          
+                  <input type="file" accept="image/*" class="form-control" id="clone" name="clone">
+                  <label class="f-white lab-addcar">เลือกขนาดไฟล์ภาพไม่เกิน 125kb</label>
+                  <label for="clone" class="lb-uplode f-white bg-oreng">เลือกไฟล์</label>
+                </div>
+              </div>
+              <div class="form-group row inp-addcar">
+                <label class="control-label col-sm-2 lab-addcar" for="imeg">รูปภาพ</label>
+                <div class="col-sm-10">          
+                  <input type="file" accept="image/*" class="form-control" id="imeg" name="imeg">
+                  <label class="f-white lab-addcar">เลือกขนาดไฟล์ภาพไม่เกิน 125kb</label>
+                  <label for="imeg" class="lb-uplode f-white bg-oreng">เลือกไฟล์</label>
+                </div>
+              </div>
+              <div class="form-group row btn-addcar">        
+                <div class="col-sm-offset-2 col-sm-5">
+                  <button type="submit" class="btn bg-oreng f-white">บันทึก</button>
+                </div>
+                <div class="col-sm-offset-2 col-sm-1">
+                  <button type="reset" class="btn bg-red f-white">ลบ</button>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+        </td>
+        <td>
+          <button type="button" class="btt add-approve" data-toggle="modal" data-target="#approve">ยืนยัน</button>
+        </td>
       </tr>
     </table>
 
