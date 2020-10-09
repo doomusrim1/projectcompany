@@ -29,3 +29,38 @@
       background-color: #535353;
       color: white;
     }
+    .td-edit {
+      width: 1px;
+    }
+    .bt {
+      float: right;
+      border: none;
+      border-radius: 15px;
+      padding: 4px 15px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .add-approve {
+      background-color:#dd5f0a;
+      color: white;
+    }
+    .add-approve:hover {
+      background-color:#535353;
+      color: white;
+    }
+    .bord {
+      border: 0px solid white;
+      box-shadow: none;
+      }
+    .f-blue {
+      color: #2C6FE0;
+    }
+    .form-approve {
+      margin: 20px 15px;
+    }
+    .lab-approve {
+      text-align: center;
+    }
+    .btn-approve {
+      float: right;
+    }

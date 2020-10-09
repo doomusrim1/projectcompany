@@ -4,67 +4,6 @@
   border-radius: 5px;
   padding: 10px 20px;
 }
-.edit-approve {
-  font-size: 20px;
-}
-.bt {
-  float: right;
-  border: none;
-  border-radius: 15px;
-  padding: 4px 15px;
-  font-size: 12px;
-  cursor: pointer;
-}
-.add-approve {
-  background-color:#dd5f0a;
-  color: white;
-}
-.add-approve:hover {
-  background-color:#535353;
-  color: white;
-}
-.bg-gay {
-  background-color:#dddddd;
-}
-.bg-oreng {
-  background-color:#dd5f0a;
-}
-.bg-red {
-  background-color:#AE1313;
-  }
-.bord {
-  border: 0px solid white;
-  box-shadow: none;
-  }
-.f-blue {
-  color: #2C6FE0;
-}
-.f-white {
-  color: white;
-}
-.form-approve {
-  margin: 10px 15px;
-}
-.form-edit {
-  margin: 50px 70px;
-}
-.inp-approve {
-  margin-left: 20px;
-}
-.lab-approve {
-  padding: 6px 0px;
-}
-.btn-approve {
-  float: right;
-}
-.btn-edit {
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-}
-.center {
-  text-align: center;
-}
 .content {
   background-color: #ffffff;
   border-radius: 5px;
@@ -93,6 +32,68 @@
   }
   .td-edit {
     width: 1px;
+  }
+
+  .edit-approve {
+    font-size: 20px;
+  }
+  .bt {
+    float: right;
+    border: none;
+    border-radius: 15px;
+    padding: 4px 15px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .add-approve {
+    background-color:#dd5f0a;
+    color: white;
+  }
+  .add-approve:hover {
+    background-color:#535353;
+    color: white;
+  }
+  .bg-gay {
+    background-color:#dddddd;
+  }
+  .bg-oreng {
+    background-color:#dd5f0a;
+  }
+  .bg-red {
+    background-color:#AE1313;
+    }
+  .bord {
+    border: 0px solid white;
+    box-shadow: none;
+    }
+  .f-blue {
+    color: #2C6FE0;
+  }
+  .f-white {
+    color: white;
+  }
+  .form-approve {
+    margin: 10px 15px;
+  }
+  .form-edit {
+    margin: 50px 70px;
+  }
+  .inp-approve {
+    margin-left: 20px;
+  }
+  .lab-approve {
+    padding: 6px 0px;
+  }
+  .btn-approve {
+    float: right;
+  }
+  .btn-edit {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  .center {
+    text-align: center;
   }
   
   // .pagination {
